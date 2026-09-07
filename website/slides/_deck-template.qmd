@@ -1,0 +1,94 @@
+---
+title: "Session NN: <topic>"
+---
+
+<!--
+CANONICAL DECK TEMPLATE. Copy to weekNN.qmd (zero padded, so week02.qmd) and
+replace the content.
+
+The Slides column on the schedule is gated on that file existing, so a deck goes
+live the moment it is written. Nothing has to be flipped in course.yml.
+
+This file is also the worked example of the deck conventions in STYLE.md §5, so
+read it as documentation rather than as a bare skeleton.
+
+Two things this YAML deliberately does NOT contain: the format block, which lives
+in _metadata.yml and is shared by every deck, and any topic wording of its own.
+The schedule takes the topic from course.yml, so the title here is for the title
+slide only and the two are kept in step by hand.
+-->
+
+## Where we are {#sec-where-we-are}
+
+- Last session: <one line>
+- Today: <one line>
+- The reading: <author, one line on the claim>
+
+::: notes
+Terse instructor-facing imperatives go here, not prose.
+Delivery cues and lines to say aloud belong in this block.
+:::
+
+# Part 1: <section> {#sec-part1}
+
+## A content slide {#sec-content-slide .smaller}
+
+::: notes
+`{.smaller}` is step 1 of the size ladder and the default for a content slide.
+:::
+
+Prose is one sentence per line.
+A revealed beat is three to six short lines, and `. . .` separates the beats.
+
+. . .
+
+The second beat lands here.
+
+. . .
+
+::: {.callout-note}
+**A note carries background or further detail.**
+The four callout types and their jobs are fixed in STYLE.md §3.
+:::
+
+## A dense block {#sec-dense-block .smaller}
+
+Step 2 of the ladder: wrap the one dense block in `.small`, not the whole slide.
+
+::: {.small}
+| Claim | What it is a claim about |
+|---|---|
+| Ideological polarization | The distribution of positions on issues. |
+| Affective polarization | Feeling toward parties and partisans. |
+:::
+
+::: {.callout-warning}
+**Never write an inline `style="font-size: ..."`.**
+The ladder is `{.smaller}`, then `.small`, then `.xsmall`, then split the slide.
+:::
+
+## Two columns {#sec-columns .smaller}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+The wider column carries the argument.
+Permitted widths are 50/50, 55/45, 45/55, 60/40, 40/60 and 33/33/33.
+:::
+
+::: {.column width="45%"}
+The narrower column carries the quotation or the aside.
+:::
+
+::::
+
+## Questions for the group {#sec-questions}
+
+- <the question the reading forces>
+- <the objection somebody should raise>
+- <what evidence would settle it>
+
+::: notes
+This is where the session actually happens.
+Keep the framing short and hand it over.
+:::

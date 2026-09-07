@@ -1,0 +1,293 @@
+---
+title: "Syllabus"
+toc: true
+toc-depth: 3
+---
+
+```{r}
+#| label: setup-syllabus
+#| echo: false
+#| message: false
+#| warning: false
+
+library(here) # project-root-relative paths
+library(yaml) # read course.yml
+
+# website/_quarto.yml is itself a project-root marker, so a bare here() would stop at
+# website/ rather than the repo root. i_am() anchors it explicitly. See STYLE.md section 4.
+here::i_am("website/syllabus.qmd")
+source(here("website", "_course-helpers.R"))
+
+cfg <- read_course()
+
+# Session numbers referenced in the prose come from course.yml, never typed.
+n_sessions <- cfg$sessions$count
+```
+
+## Course description {#sec-course-description}
+
+What does it mean for a democracy to be "polarized"?
+This seminar examines polarization as both a contested concept and a political phenomenon, with particular attention to the role of group identity in shaping democratic conflict.
+
+We begin by unpacking what polarization actually refers to, ideological, social, affective, and why these distinctions matter.
+The course then narrows to affective polarization and the social-identity foundations of partisan division, before turning to how partisan divides interact with other identity cleavages such as religion or ethnicity.
+Empirical work from Europe and beyond grounds the discussion throughout.
+
+## Course objectives {#sec-course-objectives}
+
+The seminar is built around reading political science carefully rather than accumulating results.
+By the end of it you should be able to take a claim about polarization, work out what it is a claim about, and say what evidence would support or undermine it.
+
+Three things run through every session.
+The first is **conceptual discipline**: polarization means several different things, and most disagreements in this literature are about which one is meant.
+The second is **measurement**: an affective polarization score is a construction, and what it is built from decides what it can support.
+The third is **comparison**: almost all of this literature was built on the United States, and whether it describes European multi-party democracies is an open empirical question rather than an assumption.
+
+The term paper is where you do this on a question of your own.
+
+## Course logistics {#sec-logistics}
+
+### General information {#sec-general-information}
+
+The seminar meets on `r shown(cfg$sessions$weekday)`s, `r shown(cfg$sessions$time)`, in
+`r shown(cfg$sessions$room)`.
+Each session is built around the core reading, so the discussion only works if everyone has done
+it.
+Readings for each session are listed in @sec-session-plan and the full references are collected
+in @sec-references.
+
+::: {.callout-tip}
+**If you have to miss a session, tell me beforehand.**
+A short email is enough, and it lets me tell you what you missed.
+:::
+
+### Prerequisites {#sec-prerequisites}
+
+Two different things go by this name, and it is worth keeping them apart.
+
+**Formally**, the prerequisite depends on which of the two modules in @sec-module you register
+this seminar under.
+Whether you meet it is a question for the module catalogue and the Studienbüro, not for me.
+
+**In terms of what this course assumes**, no prior work on polarization, party systems or
+political psychology is expected.
+The readings are research articles rather than textbook chapters, so you should be comfortable
+reading one, but learning how to read one is part of what the seminar is for.
+
+### Module and credits {#sec-module}
+
+This seminar is offered in **both** International Relations modules, and which one applies to you
+depends on how you register it.
+The credits, the assessment and the term paper word limit are the same either way.
+It counts toward either of:
+
+```{r}
+#| label: module-list
+#| echo: false
+#| results: asis
+
+# Built from cfg$course$modules so the module names cannot drift from course.yml.
+for (m in cfg$course$modules) {
+  cat(sprintf("- %s (Modulkatalog p. %s)\n", m$name, m$page))
+}
+cat("\n")
+```
+
+- **Course type:** `r cfg$course$course_type`
+- **Credits:** `r cfg$course$ects` ECTS
+
+The authoritative version of all of this is the
+[module catalogue](https://www.sowi.uni-mannheim.de/studium/im-studium/pruefungen-und-ordnungen/)
+and the
+[examination regulations](https://www.sowi.uni-mannheim.de/studium/im-studium/pruefungen-und-ordnungen/)
+for the B.A. Political Science, not this page.
+Where the two disagree, the regulations win.
+
+### What is required of you {#sec-requirements}
+
+Assessment has two parts, and the vocabulary is the examination regulations' own.
+**Coursework** (*Studienleistung*) is assessed pass or fail, and passing it is a prerequisite for
+the graded work.
+The **term paper** (*Prüfungsleistung*) carries the mark.
+
+#### Coursework, pass or fail {#sec-coursework}
+
+**1. Active participation (*Mitarbeit*).**
+Section 13b of the examination regulations allows participation to be set as coursework in a
+discussion-based course of this size, and it is set here.
+It is assessed on the whole of your contributions across the term, not on any single session.
+What counts is that you engage with the reading and with what other people say about it.
+
+**2. Doing the reading.**
+Each session lists **core reading**, which everyone does, and **optional reading**, which is there
+for anyone who wants to go further and as a starting point for term papers.
+The core reading is mandatory rather than recommended.
+It is also the basis on which participation is assessed, because a discussion of a text nobody has
+read is not a discussion.
+
+**3. A term paper idea presentation (*Referat*).**
+You pitch your term paper to the group in session `r cfg$blocks[[4]]$from` or
+`r cfg$blocks[[4]]$from + 1`.
+A few minutes on your question, why it is worth answering, and how you would answer it, followed
+by discussion.
+The point is to get criticism while there is still time to act on it.
+
+#### Term paper, graded {#sec-term-paper}
+
+- **Form:** a written term paper (*schriftliche Hausarbeit*).
+- **Length:** at most **`r cfg$paper$max_words` words**, the limit set in the module catalogue.
+- **Deadline:** `r shown(cfg$paper$deadline)`.
+- **Topic:** your own, on something the seminar covers. You pitch it in session
+  `r cfg$blocks[[4]]$from` or `r cfg$blocks[[4]]$from + 1`, and session `r n_sessions` is optional
+  individual consultation.
+
+A workable paper takes a claim from the literature and does something specific to it: tests it
+against a case or a dataset it was not built on, takes apart a concept two authors are using
+differently, or works out what a measurement choice does to a published conclusion.
+A summary of what several authors have said is not a term paper.
+
+### Registration and withdrawal {#sec-registration}
+
+Registration for the *Prüfungsleistung*, deregistration, and the applicable deadlines are handled
+by the **Studienbüro** under the examination regulations, not by me.
+Check the dates there and keep to them, because responsibility for meeting them sits with you.
+
+If a good reason, illness in particular, prevents you from submitting the term paper on time,
+section 30 of the examination regulations applies.
+You must submit a **written application to the Studienbüro without delay**, with evidence.
+The examination board decides, and the burden of proof is on the applicant.
+Tell me as well, but telling me is not a substitute for the formal application.
+
+Section 5 additionally allows deadlines for coursework and examinations to be extended on a timely
+written application, for instance for students with children or with dependants requiring care.
+
+### Disability and chronic illness {#sec-accommodations}
+
+If a disability or a chronic illness makes it harder for you to take an assessment in the form it
+is set, you are entitled to compensation that restores equal opportunity, under section 6 of the
+examination regulations.
+Applications are made in writing and in good time, and applications on grounds of disability or
+chronic illness go to the university's
+[representative for students with disabilities or chronic illness](https://www.uni-mannheim.de/en/academics/during-your-studies/studying-with-a-disability-or-chronic-illness/).
+
+::: {.callout-tip}
+**Talk to me early, and tell me only what you want to.**
+The formal route runs through the representative and the examination board, and I do not need to
+know the nature of your condition.
+What helps me is knowing early that an adjustment is coming, so it can be built in rather than
+improvised.
+:::
+
+### Language {#sec-language}
+
+The seminar is taught in English and the readings are in English.
+The term paper may be written in English or in German.
+
+### Mental health support {#sec-mental-health}
+
+Life and study at the University of Mannheim can sometimes feel complicated, challenging, or
+overwhelming.
+That is completely normal.
+
+If you ever feel mentally or emotionally strained, you may find useful advice on the university's
+[good mental health and studying page](https://www.uni-mannheim.de/en/academics/studying-the-healthy-way/good-mental-health/).
+The [help in times of crisis page](https://www.uni-mannheim.de/en/academics/studying-the-healthy-way/help-in-times-of-crisis/)
+gives an overview of the counselling and support services available at the university.
+
+## AI policy {#sec-ai-policy}
+
+You may use AI assistance, and for some things it is genuinely useful: finding literature,
+checking whether an argument holds together, working on your English.
+
+Two conditions.
+
+**Declare it.**
+Your term paper carries a short note saying what you used and what you used it for.
+A sentence is enough.
+An undeclared use is a problem in a way that a declared one is not.
+
+**It does not make the argument.**
+The claim, the reasoning and the judgement about what the evidence supports have to be yours,
+because they are what is being assessed.
+A paper that reads as though nobody decided anything is a weak paper whether or not a model wrote
+it, and you are answerable for every sentence you submit, including any citation that turns out
+not to exist.
+
+## Session plan {#sec-session-plan}
+
+What each session covers, what you should be able to do afterwards, and what to read.
+Dates are on the [Schedule](schedule.qmd).
+
+::: {.callout-note}
+This is a preliminary plan and may be revised during the term.
+:::
+
+```{r}
+#| label: session-plan
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+# -----------------------------------------------------------------------------
+# BUILT from `weeks:` in course.yml, which is also what schedule.qmd reads, so the
+# syllabus and the schedule cannot state different topics for the same session.
+# Add or reword a session THERE. Dates come from session_dates(), so the numbering
+# here matches the schedule exactly.
+#
+# Readings are emitted as `@key` citations. knitr runs before pandoc, so they are
+# processed as ordinary citations and collected under the References heading.
+# -----------------------------------------------------------------------------
+dates <- session_dates(cfg)
+
+emit_readings <- function(cfg, i) {
+  core <- readings_of(cfg, i, "core")
+  opt <- readings_of(cfg, i, "optional")
+  if (length(core) == 0 && length(opt) == 0) {
+    return(invisible(NULL))
+  }
+  cat("::: {.session-readings}\n\n")
+  if (length(core) > 0) {
+    cat("**Core reading**\n\n")
+    cat(paste0("- @", core, collapse = "\n"), "\n\n", sep = "")
+  }
+  if (length(opt) > 0) {
+    cat("**Optional**\n\n")
+    cat(paste0("- @", opt, collapse = "\n"), "\n\n", sep = "")
+  }
+  cat(":::\n\n")
+}
+
+for (i in seq_len(cfg$sessions$count)) {
+  w <- week_entry(cfg, i)
+  if (is.null(w)) {
+    next
+  }
+
+  cat("### Session ", i, ": ", w$topic, " {#sec-session-", pad(i), "}\n\n", sep = "")
+
+  meta <- session_date_label(dates, i, "%d %B %Y")
+  blk <- block_name_of(cfg, i)
+  if (!is.na(blk)) {
+    meta <- paste0(meta, " · ", blk)
+  }
+  cat("::: {.session-meta}\n", meta, "\n:::\n\n", sep = "")
+
+  if (!is.null(w$content)) {
+    cat(trimws(w$content), "\n\n", sep = "")
+  }
+
+  goals <- unlist(w$goals)
+  if (length(goals) > 0) {
+    cat("**Afterwards you will be able to:**\n\n")
+    cat(paste0("- ", goals, collapse = "\n"), "\n\n", sep = "")
+  }
+
+  emit_readings(cfg, i)
+}
+```
+
+## References {#sec-references}
+
+::: {#refs}
+:::

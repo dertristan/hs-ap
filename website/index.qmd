@@ -1,0 +1,84 @@
+---
+title: "Us and them: Identity and polarization in contemporary democracies"
+subtitle: "What it means for a democracy to be polarized, and what group identity has to do with it."
+---
+
+```{r}
+#| label: setup-index
+#| echo: false
+#| message: false
+#| warning: false
+
+library(here) # project-root-relative paths
+library(yaml) # read course.yml
+
+# website/_quarto.yml is itself a project-root marker, so a bare here() would stop at
+# website/ rather than the repo root. i_am() anchors it explicitly. See STYLE.md section 4.
+here::i_am("website/index.qmd")
+source(here("website", "_course-helpers.R"))
+
+# shown() prints an honest "to be announced" for any key still PLACEHOLDER in
+# course.yml, which is where every value on this page comes from.
+cfg <- read_course()
+```
+
+`r shown(cfg$course$term)`<br>
+`r cfg$course$department`<br>
+`r cfg$course$school`<br>
+`r cfg$course$university`
+
+::: {.home}
+
+:::: {.grid .course-details}
+
+::: {.g-col-12 .g-col-md-4}
+
+### Instructor {#sec-instructor}
+
+- {{< fa user >}} `r cfg$course$instructor`
+- {{< fa university >}} `r cfg$course$office`
+- {{< fa envelope >}} [`r cfg$course$email`](mailto:`r cfg$course$email`)
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+### Course details {#sec-course-details}
+
+- {{< fa calendar >}} `r shown(cfg$sessions$weekday)`
+- {{< fa clock >}} `r shown(cfg$sessions$time)`
+- {{< fa location-dot >}} `r shown(cfg$sessions$room)`
+- {{< fa list-ol >}} `r cfg$sessions$count` sessions, one per week
+- {{< fa pen-nib >}} Term paper, max. `r cfg$paper$max_words` words
+- {{< fa award >}} `r cfg$course$ects` ECTS
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+### Contacting me {#sec-contact}
+
+- {{< fa calendar-check >}} **Office hours:** `r shown(cfg$sessions$office_hours)`.
+
+:::
+
+::::
+
+:::
+
+## What this course is {#sec-what-this-is}
+
+What does it mean for a democracy to be "polarized"?
+This seminar examines polarization as both a contested concept and a political phenomenon, with particular attention to the role of group identity in shaping democratic conflict.
+We begin by unpacking what polarization actually refers to, ideological, social, affective, and why these distinctions matter.
+
+The course then narrows to affective polarization and the social-identity foundations of partisan division, before turning to how partisan divides interact with other identity cleavages such as religion or ethnicity.
+Empirical work from Europe and beyond grounds the discussion throughout.
+
+The last three sessions belong to your term paper: two of short pitches to the group, and one of optional individual consultation.
+
+## Where to go next {#sec-where-next}
+
+- **[Syllabus](syllabus.qmd)** for the full details: objectives, logistics, what is required of
+  you, the policies, and what each session covers and asks you to read.
+- **[Schedule](schedule.qmd)** for the dates, the topics and the slides.

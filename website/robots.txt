@@ -1,0 +1,3 @@
+# The course site is public but deliberately not search-indexed.
+User-agent: *
+Disallow: /

@@ -1,0 +1,31 @@
+# Quarto / render artifacts
+/_site/
+_site/
+.quarto/
+*_cache/
+*_files/
+_freeze/
+
+# LaTeX byproducts left next to .qmd
+*.tex
+*.log
+*.aux
+*.out
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Rapp.history
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Anything holding student names or contact details. The discussion-lead sign-up
+# belongs here if you keep it in a file rather than in course.yml.
+*.local.csv
+*.local.yml
+/scratch/
+
+notes.md

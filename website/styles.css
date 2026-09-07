@@ -1,0 +1,66 @@
+/* Site-wide tweaks. Carried over from qmir-2026-fall/website/styles.css, minus the
+   glossary rules, which have no counterpart here, and minus the slide size ladder,
+   which lives in slides/theme.scss because only the decks use it. */
+
+/* Schedule table: keep it readable on narrow screens. */
+table { font-size: 0.95rem; }
+.schedule-tbd { color: var(--bs-secondary-color, #6c757d); }
+/* "not published yet" (.schedule-tbd) and "there is none" (.schedule-none) are
+   different claims, so they must not look the same. */
+.schedule-none {
+  color: var(--bs-secondary-color, #6c757d);
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+/* About-page course-details grid. */
+.home {
+  margin-top: 1.5rem;
+}
+.course-details {
+  row-gap: 1.5rem;
+}
+.course-details h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+  padding-bottom: 0.4rem;
+}
+.course-details ul {
+  padding-left: 1.1rem;
+}
+/* The icons read as labels, so give them a fixed gutter and mute them slightly. */
+.course-details li > .fa-solid,
+.course-details li > .fa-regular {
+  width: 1.2em;
+  margin-right: 0.35rem;
+  opacity: 0.75;
+}
+
+/* --- Schedule ------------------------------------------------------------ */
+/* The icon legend above the tables. It is a table only so the two columns line
+   up, so strip the borders and the empty header row that Pandoc gives it. */
+.schedule-legend table { border: none; margin-bottom: 1.5rem; }
+.schedule-legend td { border: none; padding: 0.15rem 0.6rem 0.15rem 0; }
+.schedule-legend td:first-child { text-align: center; width: 2.2rem; }
+.schedule-legend thead { display: none; }
+
+/* Block headings separate the per-block tables into readable units. */
+h4 { margin-top: 2.2rem; }
+
+/* --- Syllabus ------------------------------------------------------------ */
+/* The date and block line under each session heading. */
+.session-meta {
+  font-size: 0.85rem;
+  color: var(--bs-secondary-color, #6c757d);
+  margin: -0.5rem 0 0.75rem;
+}
+
+/* The reading lists under each session. Tighter than body copy, because they are
+   a list of references rather than prose. */
+.session-readings ul {
+  margin-bottom: 0.75rem;
+}
+.session-readings li {
+  margin-bottom: 0.15rem;
+}

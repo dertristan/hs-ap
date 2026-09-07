@@ -1,0 +1,258 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# hs-ap -- the single source of truth for term-level constants.
+#
+# Read by:  website/index.qmd  ·  website/syllabus.qmd  ·  website/schedule.qmd
+# Change a value HERE, never in the consumers.
+#
+# PLACEHOLDER prints as an honest "to be announced" via shown() in
+# website/_course-helpers.R. Fill a value in here rather than in prose.
+# ─────────────────────────────────────────────────────────────────────────────
+
+course:
+  title: "Us and them: Identity and polarization in contemporary democracies"
+  term: Fall 2026
+  instructor: "Tristan Muno"
+  # Shown on the about page. Purely descriptive.
+  department: "Department of Political Science"
+  school: "School of Social Sciences"
+  university: "University of Mannheim"
+  email: "tristan.muno@uni-mannheim.de"
+  office: "A 5, 6 -- Room A 351"
+  course_type: "Hauptseminar (HS)"
+
+  # The seminar is offered in BOTH IB modules, and students register it under
+  # whichever one applies to them. Source: Modulkatalog B.A. Politikwissenschaft
+  # (HWS 2023), on the pages given below. Credits, assessment and the term-paper
+  # word limit are the same either way, and everything that differs between the two
+  # entries is the catalogue's business rather than this website's.
+  modules:
+    - name: "Aufbaumodul: Internationale Beziehungen"
+      page: 31
+    - name: "Schwerpunktmodul: Internationale Beziehungen"
+      page: 38
+
+  ects: 6
+
+sessions:
+  count: 13
+  weekday: Wednesday
+  # First session. The term runs weekly from here, and session N is the Nth weekly
+  # date AFTER removing everything in skip_dates. That arithmetic lives in exactly
+  # one place, session_dates() in website/_course-helpers.R.
+  first_session: 2026-09-09
+  # Dates on the weekly grid that are NOT taught. The schedule prints each as a
+  # greyed "no session" row, so a gap in the dates is explained rather than
+  # mysterious.
+  skip_dates:
+    - 2026-10-28 # instructor at a congress
+  time: "15:30-17:00"
+  room: A5, 6 -- C 112
+  office_hours: "By appointment. Please email me to arrange a meeting (in person or online). I aim to reply within 24 hours."
+
+# The term paper. Pruefungsleistung under the Modulkatalog: schriftliche
+# Hausarbeit, max. 7000 Woerter. The limit is identical in both module entries.
+paper:
+  deadline: 15 January, 23:59
+  max_words: 7000
+
+# The four teaching blocks. Session 1 sits outside them, because it introduces the
+# whole term. Consumed by website/schedule.qmd AND website/syllabus.qmd, so the
+# block names are written once and cannot drift apart.
+blocks:
+  - name: "Concepts"
+    from: 2
+    to: 4
+  - name: "Measurement"
+    from: 5
+    to: 6
+  - name: "Extensions and consequences"
+    from: 7
+    to: 10
+  - name: "Term papers"
+    from: 11
+    to: 13
+
+# Per-session plan. Rendered by website/syllabus.qmd (topic, content, goals,
+# readings) and website/schedule.qmd (topic).
+#
+#   topic     one line, becomes the session heading and the schedule row
+#   content   one or two sentences on what the session covers
+#   goals     learning goals, addressed to the student
+#   readings  BibTeX keys from website/references.bib, split core / optional
+#
+# There is NO slides key. The schedule's Slides column is driven by whether
+# website/slides/weekNN.qmd exists, so a deck links itself as soon as it is
+# written and nothing has to be flipped here.
+weeks:
+  - week: 1
+    topic: "Introduction and outlook"
+    content: |
+      What the seminar asks, how the term is organised, and what a term paper in it looks like.
+      We also settle the schedule for the term paper pitches.
+    goals:
+      - "Describe what the seminar covers and how the three substantive blocks build on one another."
+      - "State what the term paper asks for, when the pitch happens, and what makes a question workable."
+    readings:
+      core: []
+      optional: [torcal2025introduction]
+
+  - week: 2
+    topic: "What is identity?"
+    content: |
+      Before we can ask what divides a democracy, we need a concept of the groups that do the dividing.
+      This session treats identity as a demand for recognition and dignity, and asks how an attachment to a group becomes a political fact rather than a private one.
+      Read chapters 1 and 2 of Fukuyama.
+    goals:
+      - "Trace where the modern concept of identity comes from and how it entered political argument."
+      - "Explain how a demand for recognition becomes a political demand."
+      - "Distinguish an identity from a preference, and say why the distinction matters for the rest of the term."
+    readings:
+      core: [fukuyama2018identity]
+      optional: [huddy2013group, huddy2001social, westphal2025politicaltheory]
+
+  - week: 3
+    topic: "What is political polarization?"
+    content: |
+      Polarization is a metaphor borrowed from the natural sciences, and political science has attached it to several different things: how far apart elites stand, how far apart voters stand, how tightly issue positions bundle together, and how far apart the camps feel.
+      This session sorts them apart and asks which disputes in the literature are empirical and which are definitional.
+    goals:
+      - "Distinguish elite from mass polarization, and ideological divergence from issue alignment."
+      - "Explain why two authors can disagree about whether a public is polarized without disagreeing about any fact."
+      - "Identify which concept of polarization a given empirical claim depends on."
+    readings:
+      core: [abramowitz2008ispolarization, fiorina2008political]
+      optional: [lelkes2016mass, baldassarri2008partisans, mccoy2018toward, turkenburg2025ideology]
+
+  - week: 4
+    topic: "What is affective polarization?"
+    content: |
+      Affective polarization (AP) is the tendency of people who identify with a party to view opposing partisans negatively and copartisans positively [@iyengar2015fear; @iyengar2019origins].
+      This session takes the concept apart: the social identity logic it rests on, what it claims to add to an ideological account of division, and what has to be respecified when it travels from the two-party United States to a European multiparty system.
+    goals:
+      - "Derive in-group favouritism and out-group hostility from social identity theory."
+      - "Explain what affective polarization claims to add to an ideological account of division."
+      - "Identify what breaks, and what has to be respecified, when the concept moves to a multiparty system."
+    readings:
+      core: [iyengar2015fear, wagner2024affectiveeurope]
+      optional: [iyengar2012affect, iyengar2019origins, tajfel1986integrative, reiljan2020fear, iyengarwagner2025conceptualizing]
+
+  - week: 5
+    topic: "Measuring affective polarization"
+    content: |
+      Almost everything we know about AP rests on one class of survey item: feeling thermometers and like/dislike ratings.
+      This session asks what that item captures, how single ratings are aggregated into one score when there are more than two parties, and how those construction choices move the estimates and the conclusions that rest on them.
+    goals:
+      - "Say what a feeling thermometer measures and what it does not."
+      - "Reconstruct how an AP score is built in a multiparty system, and state what each step of the construction assumes."
+      - "Explain why the decision about who counts as a partisan changes the population an estimate refers to."
+      - "Judge whether a published estimate supports a comparison across countries or over time."
+    readings:
+      core: [druckman2019we, wagner2021affective]
+      optional: [gidron2022validating, tyler2024testing, tichelbaecker2023we, kekkonen2021affective, torcal2025operationalizing, carlinlove2025measuring]
+
+  - week: 6
+    topic: "Beyond the thermometer: behavioral measures"
+    content: |
+      An attitude scale asks people what they feel.
+      A behavioral measure asks them to do something: to divide money, to extend trust, to choose between candidates.
+      We work through conjoint allocation games fielded across EU member states, and ask what a behavioral measure buys and what it costs.
+    goals:
+      - "Describe how a conjoint allocation game turns a choice into a measure of partisan animosity."
+      - "Compare behavioral and attitudinal measures on what each can and cannot support."
+      - "Explain why coalition partnership changes the pattern of animosity in European party systems."
+    readings:
+      core: [hahm2024divided, stoetzer2023affective]
+      optional: [westwood2018tie, carlin2013politics, wagner2024affectivecoal, rollicke2025qualitative]
+
+  - week: 7
+    topic: "Beyond party: social sorting and non-partisan identities"
+    content: |
+      Party is not the only line people sort along.
+      This session asks what happens when party, region, religion, ethnicity and referendum camps line up with one another, and what happens when they cut across instead.
+    goals:
+      - "Define social sorting and explain why an aligned cleavage structure raises out-group animus."
+      - "Give a case in which the polarizing identity is not partisan at all, and say what makes it behave like one."
+      - "Assess how much support the evidence gives the claim that cross-cutting identities dampen animus."
+    readings:
+      core: [harteveld2021ticking, hobolt2020divided]
+      optional: [hahm2023divided, bradley2022ethnic, balcells2023secessionist, bettarelli2023regional, roccas2002social, mason2016acrosscutting, zollinger2024cleavage, masonversteegen2025socialsorting, hobolttilley2025issues]
+
+  - week: 8
+    topic: "Is partisanship a social identity, or a cue about ideology?"
+    content: |
+      American work is split on what partisan animosity is actually about.
+      One side reads it as group identity, dislike of them because they are them (party over policy).
+      The other reads a party label as shorthand for policy positions, so what looks like identity is disagreement in disguise (policy over party).
+      We follow the exchange and ask what evidence could settle it.
+    goals:
+      - "State the party-over-policy and the policy-over-party positions and the evidence each rests on."
+      - "Explain why identity and categorisation are hard to separate in survey and experimental designs."
+      - "Specify what evidence would distinguish the two accounts, and why it is hard to obtain."
+    readings:
+      core: [orr2023affective, dias2022nature]
+      optional: [orr2020policy, dafoe2018information, huddy2015expressive, klar2018affective, bankert2025partisanship]
+
+  - week: 9
+    topic: "Consequences of affective polarization for democracy"
+    content: |
+      AP is usually introduced as a danger, to democratic norms, to accountability, to the willingness to live alongside people who vote differently.
+      Recent work is more careful.
+      Some of the alleged consequences do not survive better designs, and others hold only under particular conditions.
+      This session separates what is established from what is asserted.
+    goals:
+      - "Reconstruct the argument for why AP is supposed to harm democracy."
+      - "Name the consequences that have actually been studied, and the designs used to study them."
+      - "Distinguish findings that hold up from findings that depend on context or on measurement."
+    readings:
+      core: [harteveld2026alleged, broockman2023doesaffective]
+      optional: [voelkel2023interventions, versteegen2026cool, kekkonenharteveld2025democraticnorms, somer2025backsliding]
+
+  - week: 10
+    topic: "Open session"
+    content: |
+      This slot is deliberately unallocated.
+      We settle the topic and the reading in the session before, so it can follow whatever the group most wants to pursue, whether that is a theme from earlier in the term or something none of the readings covered.
+      Bring suggestions.
+    goals:
+      - "Propose a topic or a reading, and say what the seminar gains from it."
+      - "Read a text without a prepared framing, and take part in a discussion the group has shaped itself."
+    readings:
+      core: []
+      optional: []
+
+  - week: 11
+    topic: "Term paper pitches I"
+    content: |
+      Short pitches of your term paper plan, followed by discussion.
+      Half the group presents and the other half asks the questions.
+    goals:
+      - "Present a research question, why it is worth answering, and a design that could answer it, in a few minutes."
+      - "Name the data or the texts your paper will work from."
+      - "Give another student criticism they can still act on."
+    readings:
+      core: []
+      optional: []
+
+  - week: 12
+    topic: "Term paper pitches II"
+    content: |
+      The second half of the pitches, in the same format.
+    goals:
+      - "Present a research question, why it is worth answering, and a design that could answer it, in a few minutes."
+      - "Name the data or the texts your paper will work from."
+      - "Give another student criticism they can still act on."
+    readings:
+      core: []
+      optional: []
+
+  - week: 13
+    topic: "Term paper consultation (optional)"
+    content: |
+      Optional individual consultation on the term paper.
+      There is no group session in this slot.
+      Email me to book a time.
+    goals:
+      - "Leave with a question, an outline and a plan you can execute before the deadline."
+    readings:
+      core: []
+      optional: []

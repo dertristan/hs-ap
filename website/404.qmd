@@ -1,0 +1,31 @@
+---
+title: "404: Page Not Found"
+---
+
+Why wasn’t this page found?
+
+**Rational choice**:
+
+You maximized utility by clicking the wrong link.
+
+**Collective action**:
+
+Everyone expected someone else to build the page.
+
+**Path dependence**:
+
+A small coding decision in 2003 locked us into this outcome.
+
+**Omitted variable bias**:
+
+The page exists -- we just failed to control for it.
+
+**Endogeneity**:
+
+Your search caused the page not to load.
+
+**Multicollinearity**:
+
+The page was there, but it was perfectly correlated with another one.
+
+Inspired by the [Financial Times 404 landing page.](https://error-pages.ft.com/404)

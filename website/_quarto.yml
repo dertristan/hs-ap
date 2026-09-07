@@ -1,0 +1,78 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "slides/*.qmd"
+
+# Deliberately NOT `auto`. Freeze keys on a page's own source, and every fact these
+# pages print comes from somewhere else: course.yml for the dates, the topics and the
+# readings, and the mere existence of website/slides/weekNN.qmd for the schedule's
+# Slides column. Frozen, a new deck or an edited course.yml would render as though
+# nothing had changed. Nothing here fits a model or touches data, so re-running every
+# chunk on every render costs a second.
+freeze: false
+
+website:
+  title: "Us and them"
+  description: "Identity and polarization in contemporary democracies."
+  # Sources are public: let students read a page's source and file issues against the site.
+  repo-url: "https://github.com/dertristan/hs-ap"
+  # The Quarto project root is website/, but the repo root is one level up, so without
+  # this the "View source" action links to /blob/main/<page>.qmd and 404s.
+  repo-subdir: website
+  repo-actions: [source, issue]
+  reader-mode: false
+  navbar:
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Syllabus"
+        href: syllabus.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+  page-footer:
+    left: |
+      © 2026 Tristan Muno
+      Content [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+    right: |
+      Made with  ♥ and [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    # The site is public but deliberately NOT search-indexed (see also robots.txt).
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex">
+
+# Cross-references are mandatory on every figure, table and heading (STYLE.md §2).
+# Numbering stays Quarto's default. Only the prefixes are pinned, so wording is stable.
+crossref:
+  fig-title: "Figure"
+  tbl-title: "Table"
+  fig-prefix: "Figure"
+  tbl-prefix: "Table"
+  eq-prefix: "Equation"
+  sec-prefix: "Section"
+
+execute:
+  echo: false
+  message: false
+  warning: false
+
+bibliography: references.bib
+biblio-style: apsr
+# The syllabus cites every reading, and the bibliography is collected under its
+# own References heading. Nothing else on the site cites anything.
+citations-hover: true
+
+# The fontawesome extension is VENDORED at website/_extensions/quarto-ext/fontawesome,
+# so there is no install step on a fresh clone. It contributes shortcodes rather than a
+# filter, so Quarto discovers it automatically and it needs no `filters:` entry here.
+# Used by index.qmd (course details grid) and schedule.qmd (the legend and the Slides
+# and Reading columns).

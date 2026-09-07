@@ -1,0 +1,111 @@
+/*-- scss:defaults --*/
+// RevealJS deck theme for this seminar. Copied from qmir-2026-fall so the decks in
+// both courses keep the same University of Mannheim palette.
+$caption-background: #003056;
+$main-background: white;
+$main-text: #003056; // UMA dark blue
+$footnote-background: #003056;
+$presentation-heading-color: #003056;
+$link-accent: #DE7E50; // the only non-blue in the deck
+
+/*-- scss:rules --*/
+
+/* ── Global text colour ──────────────────────────────────────────────────────
+   Reveal leaves incremental ". . ." fragments at the browser default (black),
+   so the colour has to be forced on the fragment selectors too, not just body. */
+.reveal,
+.reveal .slides,
+.reveal .slides section,
+.reveal .slides section p,
+.reveal .slides section li,
+.reveal .slides section span,
+.reveal .slides section div,
+.reveal .fragment,
+.reveal .fragment.visible,
+.reveal .slides section .fragment,
+.reveal .slides section .fragment.visible {
+  color: $main-text;
+}
+
+#title-slide {
+  .title,
+  .subtitle,
+  .quarto-title-author,
+  .quarto-title-date {
+    color: $main-text;
+  }
+}
+
+.reveal .slides > section > p,
+.reveal .slides > section > section > p {
+  color: $main-text;
+}
+
+.reveal table,
+.reveal table th,
+.reveal table td,
+.reveal table code,
+.reveal table .katex {
+  color: $main-text;
+}
+
+.reveal .slide-number {
+  background-color: $footnote-background;
+  color: $main-text;
+  bottom: 14px !important;
+  right: 50px !important;
+  top: unset !important;
+}
+
+.reveal .footer {
+  background-color: $main-background;
+  color: $main-text;
+}
+
+.quarto-author,
+.quarto-date {
+  color: $main-text;
+}
+
+.reveal a {
+  color: $link-accent;
+}
+
+.reveal li {
+  color: $main-text;
+}
+
+.reveal .slide-logo {
+  max-height: 4em !important;
+  top: 0;
+  right: 12px;
+}
+
+/* Image captions and the "View source" disclosure stay out of the way. */
+.reveal .slides .slide img + p.caption {
+  font-size: 0.5em;
+}
+
+.reveal details > summary {
+  font-size: 0.5em;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* ── The size ladder (STYLE.md §5.1) ─────────────────────────────────────────
+   These two classes plus Quarto's built-in {.smaller} on the heading are the
+   ONLY permitted steps. Inline style="font-size: ..." is a lint error (E031).
+   Anything still overflowing the 1050x700 canvas gets SPLIT, not shrunk. */
+.reveal .small {
+  font-size: 0.80em;
+}
+
+.reveal .xsmall {
+  font-size: 0.70em;
+}
+
+/* Give the single sanctioned column idiom some breathing room. */
+.reveal .columns {
+  gap: 1.5rem;
+}

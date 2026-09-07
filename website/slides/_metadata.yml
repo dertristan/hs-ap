@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Shared options for EVERY deck in this directory.
+#
+# A deck's own YAML carries its `title:` and nothing else. Setting the format
+# here once is what keeps thirteen decks from drifting apart, which is exactly
+# what happened in the sibling QMIR course before the block was centralised.
+#
+# Adapted from qmir-2026-fall/website/slides/_metadata.yml, minus the code
+# options: this is a reading seminar, so no deck runs R.
+# ─────────────────────────────────────────────────────────────────────────────
+
+author: Tristan Muno
+date: last-modified
+date-format: MMMM D, YYYY
+
+# The Mannheim palace behind every deck's title slide. The path is relative to this
+# file, which sits in the same directory as the decks. The image is a DOWNSCALED
+# derivative, because embed-resources inlines it as base64 into every deck.
+# The opacity is what keeps the dark blue title, author and date readable over it.
+title-slide-attributes:
+  data-background-image: images/uma-palace-title.jpg
+  data-background-size: cover
+  data-background-opacity: "0.35"
+
+format:
+  revealjs:
+    theme: theme.scss
+    # Sized and positioned by the .slide-logo rule in theme.scss. Path relative to
+    # this file, which sits in the same directory as the decks.
+    logo: images/uma_ss.png
+    # Decks are downloaded and shown offline, so inline everything.
+    embed-resources: true
+    preview-links: false
+    slide-number: true
+    incremental: true
+    # Keep a fragmented slide on ONE printed page.
+    pdfSeparateFragments: false
+    footer: "Us and them -- {{< meta date >}}"
+    # Canvas is reveal's 1050x700 default. Do not override width/height per deck.

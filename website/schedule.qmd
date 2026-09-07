@@ -1,0 +1,168 @@
+---
+title: "Schedule"
+toc: true
+toc-depth: 2
+---
+
+```{r}
+#| label: setup-schedule
+#| echo: false
+#| message: false
+#| warning: false
+
+library(here) # project-root-relative paths
+library(yaml) # read course.yml
+
+# website/_quarto.yml is itself a project-root marker, so a bare here() would stop at
+# website/ rather than the repo root. i_am() anchors it explicitly. See STYLE.md section 4.
+here::i_am("website/schedule.qmd")
+source(here("website", "_course-helpers.R"))
+
+cfg <- read_course()
+```
+
+Your roadmap for the term.
+One session per week, and each row links the session's slides and its entry in the
+[Syllabus](syllabus.qmd), which is where the readings and the learning goals live.
+
+::: {.schedule-legend}
+| | |
+|---|---|
+| {{< fa chalkboard >}} | **Slides.** The session's deck. |
+| {{< fa book >}} | **Reading.** Opens the session's entry in the syllabus, core and optional. |
+| [{{< fa chalkboard >}}]{.schedule-tbd} | Greyed out means not published yet. |
+| [none]{.schedule-none} | There is no reading for that session at all. |
+:::
+
+::: {.callout-note}
+This is a preliminary plan and may be revised during the term.
+Greyed-out entries are not settled yet.
+:::
+
+```{r}
+#| label: schedule-tables
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+# -----------------------------------------------------------------------------
+# These tables are BUILT, not typed. Sources of truth:
+#   course.yml                -> session count, block names, per-session topics
+#   website/slides/weekNN.qmd -> the session's deck, linked once the file exists
+# Dates come from session_dates(), which starts at first_session and skips the
+# cancelled dates, so a cancelled session pushes the later ones back rather than
+# renumbering the term. A slide link appears as soon as its deck exists, so there
+# is nothing to remember to switch on at release.
+# cfg / pad() / the block helpers come from the setup chunk and _course-helpers.R.
+# -----------------------------------------------------------------------------
+n_wk <- cfg$sessions$count
+dates <- session_dates(cfg)
+
+# Grey, not a link: planned but not settled.
+planned <- function(x) sprintf("[%s]{.schedule-tbd}", x)
+tbd <- planned("--")
+
+# The two link columns are icons rather than words, so a row stays narrow. The
+# fontawesome shortcode is emitted as text here and resolved by Quarto after
+# knitr has run, which is why an asis chunk can write one.
+icon <- function(name) sprintf("{{< fa %s >}}", name)
+icon_link <- function(name, href) sprintf("[%s](%s)", icon(name), href)
+icon_off <- function(name) sprintf("[%s]{.schedule-tbd}", icon(name))
+
+topic_of <- function(i) {
+  w <- week_entry(cfg, i)
+  if (is.null(w) || is.null(w$topic)) tbd else w$topic
+}
+
+# The deck for a session, by convention website/slides/weekNN.qmd. The link is
+# gated on the file existing, so a deck publishes itself and course.yml carries no
+# slides key that could fall out of step with what is actually written.
+deck_of <- function(i) here("website", "slides", paste0("week", pad(i), ".qmd"))
+
+slides_of <- function(i) {
+  if (file.exists(deck_of(i))) {
+    icon_link("chalkboard", sprintf("slides/week%s.html", pad(i)))
+  } else {
+    icon_off("chalkboard")
+  }
+}
+
+# The readings live in the syllabus, so the schedule links there rather than
+# repeating them. The anchor is the one syllabus.qmd emits for the session.
+# A session with no readings at all says so, because that is a different claim
+# from a greyed icon, which means not published yet.
+reading_of <- function(i) {
+  n <- length(readings_of(cfg, i, "core")) + length(readings_of(cfg, i, "optional"))
+  if (n == 0) {
+    return("[none]{.schedule-none}")
+  }
+  icon_link("book", sprintf("syllabus.html#sec-session-%s", pad(i)))
+}
+
+row_of <- function(i) {
+  sprintf(
+    "| %s | %s | %s | %s | %s |",
+    pad(i), session_date_label(dates, i), topic_of(i), slides_of(i), reading_of(i)
+  )
+}
+
+# A cancelled date, printed where it falls so the gap in the dates is explained.
+skip_row <- function(d) {
+  sprintf("| %s | %s | %s | | |", tbd, format(d, "%d %b"), planned("No session"))
+}
+
+header <- c(
+  "| Session | Date | Topic | Slides | Reading |",
+  "|--------:|:-----|:------|:------:|:-------:|"
+)
+
+skips <- skipped_sessions(cfg)
+
+emit_table <- function(weeks, caption, id) {
+  rows <- vapply(weeks, row_of, character(1))
+  # Any cancelled date that falls inside this block's span goes in at its place.
+  for (k in seq_len(nrow(skips))) {
+    aw <- skips$after_week[k]
+    if (aw %in% weeks) {
+      at <- which(weeks == aw)
+      rows <- append(rows, skip_row(skips$date[k]), after = at)
+    }
+  }
+  cat(c(header, rows), sep = "\n")
+  cat("\n\n: ", caption, " {#", id, "}\n\n", sep = "")
+}
+
+emit_table(
+  1,
+  "Session 1, orientation. What the seminar asks, how the term is organised, and what a term paper in it looks like.",
+  "tbl-schedule-session1"
+)
+
+for (k in seq_along(cfg$blocks)) {
+  b <- cfg$blocks[[k]]
+  weeks <- seq(b$from, min(b$to, n_wk))
+  cat("#### Block ", block_numeral(k), ": ", b$name, "\n\n", sep = "")
+  emit_table(
+    weeks,
+    sprintf(
+      "Block %s of the term, %s. The chalkboard opens the session's slides and the book opens its entry in the syllabus, where the core and optional readings are listed. A greyed icon is not published yet.",
+      block_numeral(k), tolower(b$name)
+    ),
+    sprintf("tbl-schedule-block%d", k)
+  )
+}
+```
+
+## How a session runs {#sec-how-a-session-runs}
+
+Everyone reads the **core reading** beforehand, and the session is a discussion of that text
+rather than a lecture about it.
+I open with a short framing of the reading and the questions it raises, and the rest of the time
+belongs to the group.
+The optional readings are there for anyone who wants to go further, and as a starting point for
+term papers.
+
+Sessions `r cfg$blocks[[4]]$from` and `r cfg$blocks[[4]]$from + 1` are term paper pitches, and
+session `r cfg$sessions$count` is optional individual consultation.
+See [what is required of you](syllabus.qmd#sec-requirements) for what each of those asks.
