@@ -26,12 +26,14 @@ n_sessions <- cfg$sessions$count
 
 ## Course description {#sec-course-description}
 
-What does it mean for a democracy to be "polarized"?
-This seminar examines polarization as both a contested concept and a political phenomenon, with particular attention to the role of group identity in shaping democratic conflict.
+```{r}
+#| label: course-description
+#| echo: false
+#| results: asis
 
-We begin by unpacking what polarization actually refers to, ideological, social, affective, and why these distinctions matter.
-The course then narrows to affective polarization and the social-identity foundations of partisan division, before turning to how partisan divides interact with other identity cleavages such as religion or ethnicity.
-Empirical work from Europe and beyond grounds the discussion throughout.
+# Written once in course.yml, printed here and on the About page, so the two cannot drift.
+cat(trimws(cfg$course$description), "\n\n")
+```
 
 ## Course objectives {#sec-course-objectives}
 
@@ -39,9 +41,9 @@ The seminar is built around reading political science carefully rather than accu
 By the end of it you should be able to take a claim about polarization, work out what it is a claim about, and say what evidence would support or undermine it.
 
 Three things run through every session.
-The first is **conceptual discipline**: polarization means several different things, and most disagreements in this literature are about which one is meant.
-The second is **measurement**: an affective polarization score is a construction, and what it is built from decides what it can support.
-The third is **comparison**: almost all of this literature was built on the United States, and whether it describes European multi-party democracies is an open empirical question rather than an assumption.
+The first is **conceptual discipline**: polarization means several different things, and many disagreements in this literature are about which one is meant.
+The second is **measurement**: an affective polarization score is a construction, and what it is built from shapes what it can support.
+The third is **evidence**: a striking finding is a starting point rather than a conclusion, and the seminar asks what design produced it and how much it can carry.
 
 The term paper is where you do this on a question of your own.
 

@@ -20,6 +20,18 @@ course:
   office: "A 5, 6 -- Room A 351"
   course_type: "Hauptseminar (HS)"
 
+  # The seminar blurb. Printed by BOTH website/index.qmd and website/syllabus.qmd, so it is
+  # written here once and the two pages cannot state different things about the same seminar.
+  # Markdown: one sentence per line, blank line between paragraphs.
+  description: |
+    "Us and them" is one of the oldest structures in politics and one of the hardest to pin down.
+    This seminar asks what happens to a democracy when that line hardens, and what group identity has to do with it.
+
+    We start with identity, where the concept comes from and how an attachment to a group becomes a political fact.
+    Then we take the word "polarization" apart, because it names several different things and many arguments in this literature are really arguments about which one is meant.
+    The middle of the term belongs to affective polarization, the tendency to dislike the other side rather than merely to disagree with it, and to the survey items that much of the evidence for it rests on.
+    We end by pushing on the concept: what happens when the dividing line is religion or region rather than party, whether partisan animosity is about identity at all, and how much of the alleged damage to democracy holds up.
+
   # The seminar is offered in BOTH IB modules, and students register it under
   # whichever one applies to them. Source: Modulkatalog B.A. Politikwissenschaft
   # (HWS 2023), on the pages given below. Credits, assessment and the term-paper

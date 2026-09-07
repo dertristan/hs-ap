@@ -68,12 +68,14 @@ cfg <- read_course()
 
 ## What this course is {#sec-what-this-is}
 
-What does it mean for a democracy to be "polarized"?
-This seminar examines polarization as both a contested concept and a political phenomenon, with particular attention to the role of group identity in shaping democratic conflict.
-We begin by unpacking what polarization actually refers to, ideological, social, affective, and why these distinctions matter.
+```{r}
+#| label: what-this-is
+#| echo: false
+#| results: asis
 
-The course then narrows to affective polarization and the social-identity foundations of partisan division, before turning to how partisan divides interact with other identity cleavages such as religion or ethnicity.
-Empirical work from Europe and beyond grounds the discussion throughout.
+# Written once in course.yml, printed here and on the syllabus, so the two cannot drift.
+cat(trimws(cfg$course$description), "\n\n")
+```
 
 The last three sessions belong to your term paper: two of short pitches to the group, and one of optional individual consultation.
 
