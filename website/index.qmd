@@ -58,7 +58,7 @@ cfg <- read_course()
 
 ### Contacting me {#sec-contact}
 
-- {{< fa calendar-check >}} **Office hours:** `r shown(cfg$sessions$office_hours)`.
+- {{< fa calendar-check >}} **Office hours:** `r shown(cfg$sessions$office_hours)`
 
 :::
 
