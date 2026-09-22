@@ -1,6 +1,6 @@
 ### Copyright and usage restrictions for university assets
 
-**Important notice:** the site content is licensed CC BY-SA 4.0, but the two files in this
+**Important notice:** the site content is licensed CC BY-SA 4.0, but the two university files in this
 directory are the intellectual property of the University of Mannheim and are **not** covered by
 that licence.
 
@@ -24,3 +24,23 @@ deck title-slide background. It falls under exactly the same terms as the source
 
 The descriptions here are informational. The legally binding rules are the ones stated on the
 university's website.
+
+### Third-party figures from published research
+
+The files below are cropped from published articles and reproduced in the session decks for
+teaching, each with a caption naming its source.
+They remain the property of their rights holders and are **not** covered by the site's CC BY-SA
+4.0 licence.
+Do not reuse them outside this course without checking the publisher's terms.
+
+| File | Source | Rights holder |
+|---|---|---|
+| `week03-as2008-fig1.png`, `week03-as2008-fig3.png` | Abramowitz and Saunders (2008), "Is polarization a myth?", *The Journal of Politics* 70 (2), Figures 1 and 3 | Southern Political Science Association, published by Cambridge University Press |
+| `week03-fap2008-tab1.png`, `week03-fap2008-fig1.png` | Fiorina, Abrams and Pope (2008), "Polarization in the American public: Misconceptions and misreadings", *The Journal of Politics* 70 (2), Table 1 and Figure 1 | Southern Political Science Association, published by Cambridge University Press |
+| `week03-fa2008-fig1.png`, `week03-fa2008-fig2.png`, `week03-fa2008-fig7.png` | Fiorina and Abrams (2008), "Political polarization in the American public", *Annual Review of Political Science* 11, Figures 1, 2 and 7 | Annual Reviews |
+
+### The instructor's own figures
+
+`week03-physics.png`, `week03-four-dists.png` and `week03-bipolar-multipolar.png` are schematic
+figures drawn by the instructor for an earlier talk and rendered from the same code.
+They fall under the site's CC BY-SA 4.0 licence.

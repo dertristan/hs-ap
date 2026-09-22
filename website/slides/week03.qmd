@@ -1,0 +1,532 @@
+---
+title: "Session 03: What is political polarization?"
+---
+
+<!--
+Session 03, 90 minutes. Time plan, also repeated in the notes of each section divider:
+
+   0-5   Opening: goals, agenda
+   5-20  The concept (slides 5 to 7 of the CSAP talk, figures re-rendered from its code)
+  20-25  The debate: setting
+  25-40  Abramowitz and Saunders (2008), five-part scheme
+  40-55  Fiorina, Abrams and Pope (2008), five-part scheme
+  55-80  What were they disagreeing about? Pair task 10, plenary 15
+  80-90  Wrap-up: recap, next session
+
+The learning goals are copied from course.yml (weeks, week 3). The deck runs no R, so they
+are kept in step by hand, like the title.
+Figure provenance and rights are listed in images/COPYRIGHTS.md.
+-->
+
+## Session 03 goals {#sec-week03-goals}
+
+::: notes
+Read the goals aloud. Goal 2 is the one the whole session builds to.
+:::
+
+By the end of today, you will be able to:
+
+1. Distinguish elite from mass polarization, and ideological divergence from issue alignment.
+2. Explain why two authors can disagree about whether a public is polarized without disagreeing about any fact.
+3. Identify which concept of polarization a given empirical claim depends on.
+
+## Today {#sec-today .smaller}
+
+::: notes
+0 to 5 min for goals and agenda.
+Say it once: the core reading was linked wrongly at first, see the syllabus.
+Anyone who read the Annual Review has read Fiorina's side at length.
+:::
+
+1. **The concept**
+   - A word borrowed from physics, and the meanings it picked up
+2. **The debate**
+   - Is the American public polarized? A 2008 exchange in the *Journal of Politics*
+3. **Abramowitz and Saunders (2008)**
+   - "Is polarization a myth?"
+4. **Fiorina, Abrams and Pope (2008)**
+   - "Misconceptions and misreadings"
+5. **What were they disagreeing about?**
+   - Pair task and discussion
+6. **Wrap-up**
+
+# The concept {#sec-concept}
+
+::: notes
+5 to 20 min.
+Frame the rest of the session: every result today gets placed on this vocabulary.
+:::
+
+## Borrowed from physics {#sec-physics .smaller}
+
+::: notes
+Start outside political science.
+Unpolarized light vibrates in every plane, a filter aligns it to one. A magnet separates charge into two poles.
+Stress what is missing: conflict. Social science added that.
+Ask: when you hear "polarized society", what do you picture?
+:::
+
+- In physics, polarization is the *orientation* of a wave
+- The original meaning is alignment, orientation, separation
+- Nothing about conflict or hostility. Social science supplied that.
+
+![Two physical meanings of polarization. Light passing a filter ends up aligned in one plane, and a magnet separates charge towards two poles. Neither involves conflict.](images/week03-physics.png){#fig-physics fig-align="center" width="80%"}
+
+## A family of concepts {#sec-family .smaller}
+
+::: notes
+Grey is "before", navy is "after" in each panel.
+Dispersion: spread. Bimodality: the middle empties. Sorting: two divides become correlated, and nobody moves on the horizontal axis. Distance: group means.
+Land the point: these can move in opposite directions in the same data.
+Tell them this figure comes back in the pair task.
+:::
+
+- Broadest usage: alignment, separation, sorting, divergence
+- At least four mathematically distinct things share the name
+- They can move in **opposite directions in the same data**
+
+![Four meanings of polarization, grey before and navy after. Dispersion is how spread out opinions are, bimodality is whether the middle empties, sorting is whether two divides become correlated, and distance is how far apart group means are.](images/week03-four-dists.png){#fig-four-dists fig-align="center" width="70%"}
+
+## Three further axes {#sec-axes .smaller}
+
+::: notes
+Bipolar vs multipolar: US research assumes two camps, Europe has seven parties.
+State vs process: "is polarized" is a snapshot, "is polarizing" is a trend.
+Object vs target: who is polarized, elites or the public, and against whom?
+Pivot: the third axis is where today's debate starts.
+:::
+
+- Bipolar vs multipolar: nothing requires two camps
+- State vs process: a snapshot vs a trend
+- Object vs target: who is polarized against whom?
+
+![Bipolar and multipolar configurations. On the left, two camps on one dimension. On the right, several camps spread over several dimensions.](images/week03-bipolar-multipolar.png){#fig-bipolar fig-align="center" width="70%"}
+
+## Elite versus mass {#sec-elite-mass .smaller}
+
+::: notes
+Elites: roll-call voting in Congress has pulled apart since the 1970s. Both readings accept this.
+The fight is over the mass public.
+Ask: what would you need to see in survey data to call a public polarized?
+Collect two or three answers, keep them for the pair task.
+:::
+
+- **Elites** (legislators, activists): divergence since the 1970s is not disputed [@fiorina2008political]
+- **The mass public**: does the electorate follow its elites?
+- Two further distinctions sit inside that question
+  - *Ideological divergence*: people move apart on issues, towards the extremes
+  - *Issue alignment*: positions bundle together, and with party, without anyone moving
+
+# The debate {#sec-debate}
+
+::: notes
+20 to 25 min.
+:::
+
+## Is the public polarized? {#sec-debate-setting .smaller}
+
+::: notes
+Setting: red-blue maps after 2000 and 2004, talk of a "culture war".
+Fiorina's book *Culture War? The Myth of a Polarized America* says no: the public is moderate, only elites polarized.
+Abramowitz and Saunders attack it, Fiorina, Abrams and Pope reply in the same issue.
+Mention the Annual Review: same side as the reply, longer. We use it in the last block.
+:::
+
+- After 2000 and 2004: red states vs blue states, a "culture war" narrative
+- Fiorina's *Culture War?* (2005, 2006): a myth, the public is **closely** but not **deeply** divided
+- *Journal of Politics* 70 (2), 2008, critique and reply back to back
+  - @abramowitz2008ispolarization: "Is polarization a myth?"
+  - @fiorina2008polarization: "Misconceptions and misreadings"
+- Optional: @fiorina2008political, the Annual Review version of Fiorina's side
+
+# Abramowitz and Saunders (2008) {#sec-as}
+
+::: notes
+25 to 40 min. Five parts, move fast through design, slow down on results.
+:::
+
+## Introduction {#sec-as-intro .smaller}
+
+::: notes
+Converse 1964: ideological thinking confined to a small minority.
+Fiorina says this still holds. A&S say the world changed since.
+Ask the room: what changed since the 1950s that might make voters more ideological?
+:::
+
+- **Puzzle:** Fiorina says today's voters look like the barely ideological public @converse1964nature described for the 1950s
+- But much has changed since then
+  - Share with some college education: 19% in 1956, 61% in 2004
+  - Party elites have moved apart for decades
+- **Question:** is mass polarization a myth?
+- They test five of Fiorina's claims: moderation, partisan and geographic polarization, social cleavages, and voter engagement
+
+## Theory {#sec-as-theory .smaller}
+
+::: notes
+Three claims, one per bullet. The engagement claim is the one that matters for the debate.
+Flag it: "whose opinions matter most" is a normative choice of population.
+:::
+
+- **Education and elite cues:** a more educated public, watching polarized elites, should think more ideologically
+- **The engaged:** polarization should be deepest among the interested, informed and active, "whose opinions matter most to candidates and officeholders"
+- **Mobilization:** polarization raises the stakes of an election, so it should *energize* voters, not turn them off
+
+## Research design {#sec-as-design .smaller}
+
+::: notes
+Point to the coding choices: collapse to liberal, moderate, conservative, don't knows to the middle, then an index.
+FAP will attack exactly this. Ask them to remember it.
+:::
+
+- **Data:** American National Election Studies 1972 to 2004, 2004 National Exit Poll
+- **Ideological consistency:** seven issues, each collapsed to liberal, moderate or conservative
+  - Score = |number of liberal positions minus number of conservative positions|
+  - A 16-item scale for 2004, recoded to 11 points
+- **Engagement:** interest, knowledge and participation, split into thirds
+- **Partisan polarization:** correlation of party identification with ideology over time
+- **Geography and religion:** red vs blue state voters, logit of the Bush vote on religiosity
+
+## Results: consistency {#sec-as-results-consistency .smaller}
+
+::: notes
+Read the top row: consistent views 24, 29, 33.
+Then the gap: nonvoters flat at 18 to 19, college graduates 36 to 49.
+Average inter-item correlation .20, .26, .32. Name the concept: constraint.
+:::
+
+::: {.small}
+| Share with consistently liberal or conservative views (%) | 1982 to 1990 | 1992 to 2000 | 2002 to 2004 |
+|---|---:|---:|---:|
+| All respondents | 24 | 29 | 33 |
+| Nonvoters | 18 | 19 | 19 |
+| High knowledge | 38 | 43 | 48 |
+| College graduates | 36 | 43 | 49 |
+
+: Share of respondents with consistently liberal or consistently conservative positions across seven issues, by decade. Selected rows from @abramowitz2008ispolarization, Table 1. {#tbl-as-consistency}
+:::
+
+- The average correlation between the seven items rises from .20 to .26 to .32
+
+## Results: the engaged {#sec-as-results-engaged .smaller}
+
+::: notes
+Same mean (6.1 vs 6.2), SD nearly doubles (1.5 vs 2.8).
+Ask: is the most engaged panel bimodal? Look at it: mass on both sides, a dip at the middle.
+Most engaged third = 37% of respondents, close to half of voters.
+:::
+
+:::: {.columns}
+
+::: {.column width="45%"}
+![Distribution of 2004 NES respondents on an 11-point liberal-conservative policy scale. The least engaged third (A) clusters in the middle, the most engaged third (B) spreads towards both ends. *Source:* @abramowitz2008ispolarization, Figure 1.](images/week03-as2008-fig1.png){#fig-as-engaged fig-align="center" height="400"}
+:::
+
+::: {.column width="55%"}
+- Least engaged third: mean 6.1, SD **1.5**
+- Most engaged third: mean 6.2, SD **2.8**
+- Consistent liberals or conservatives
+  - Least engaged: 13% and 19%
+  - Most engaged: 32% and 39%
+- The engaged third is 37% of respondents and close to half of all voters
+:::
+
+::::
+
+## Results: sorting {#sec-as-results-party .smaller}
+
+::: notes
+Correlation of party ID with ideology: .32 in 1972, .44 in 1992, .63 in 2004.
+Among the engaged, .47 to .77.
+Ask: is this dispersion, bimodality, sorting or distance? Let them answer. It is sorting.
+:::
+
+:::: {.columns}
+
+::: {.column width="55%"}
+![Correlation of party identification with liberal-conservative identification in the NES, 1972 to 2004. It rises from .32 to .63, most steeply after 1992. *Source:* @abramowitz2008ispolarization, Figure 3.](images/week03-as2008-fig3.png){#fig-as-correlation fig-align="center"}
+:::
+
+::: {.column width="45%"}
+- r = .32 in 1972, .44 in 1992, **.63** in 2004
+- Among the engaged: .47 to .77
+- The gap between Democratic and Republican mean ideology doubles, 0.9 to 1.8 points
+:::
+
+::::
+
+## Results: other evidence {#sec-as-results-other .smaller}
+
+::: notes
+Quick run through, one number each.
+These are the results FAP say are not evidence of polarization. Hold that thought.
+:::
+
+- **Geography:** battleground states fall from 24 in 1960 to 12 in 2004
+- **Religion:** among white voters, religiosity predicts the Bush vote better than any other social characteristic
+  - P(Bush vote) .34 for the least religious, .81 for the most religious
+- **Engagement in 2004:** turnout 54% to 61%, persuasion attempts 32% to 48%
+  - Voters feeling strongly about Bush, either way, were the most likely to vote and campaign
+
+## Conclusion {#sec-as-conclusion .smaller}
+
+::: notes
+Read the Pogo line. It sums up their reading of the whole debate.
+:::
+
+- Polarization is **not** just an elite phenomenon
+- The centre is held by the least interested, informed and active
+- Elite divisions "reflect real divisions within the American electorate"
+- Polarization **energizes** the electorate rather than turning it off
+
+> "We have met the enemy and he is us" [@abramowitz2008ispolarization, quoting Pogo]
+
+# Fiorina, Abrams and Pope (2008) {#sec-fap}
+
+::: notes
+40 to 55 min. Same five parts.
+:::
+
+## Introduction {#sec-fap-intro .smaller}
+
+::: notes
+Their first move is to rule out a whole class of evidence before replying.
+Ask: do you accept that a vote cannot show polarization? Keep it short, the pair task returns to it.
+:::
+
+- A point-by-point reply to the five criticisms
+- **Before the reply, a rule about evidence:**
+  - Votes, election returns and approval ratings "can not be used as evidence of polarization, for or against"
+- Their longer case is in @fiorina2008political
+
+## Theory {#sec-fap-theory .smaller}
+
+::: notes
+Walk the figure. Same voters, normally distributed on two dimensions.
+Left: candidates differ on economics, the vote splits on economics. Right: they differ on morals, the vote splits on morals.
+The voters did not change. The candidates did.
+:::
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- **Polarization** = movement from the centre towards the extremes
+- **Sorting** is something else: party groups grow more distinct while the overall distribution stays put
+- Centrist voters make polarized choices when the candidates polarize
+:::
+
+::: {.column width="55%"}
+![A spatial model with the same voters in both panels. When the candidates differ on the economic dimension (left), the vote divides voters along it. When they differ on the moral dimension (right), the same voters divide along that one instead. *Source:* @fiorina2008political, Figure 7.](images/week03-fa2008-fig7.png){#fig-fa-spatial fig-align="center"}
+:::
+
+::::
+
+## Research design {#sec-fap-design .smaller}
+
+::: notes
+Contrast with A&S: FAP look at raw distributions, A&S at recoded indices.
+Name it: a measurement disagreement, not a definitional one.
+:::
+
+- **Raw distributions** instead of recoded and aggregated indices
+- Ideological self-placement in three surveys: NES, GSS and Gallup, 1970s to 2000s
+- The same NES issue scales as A&S, compared position by position, 1984 vs 2004
+- Pew Research Center: party differences on 40 items, 1987 to 2007
+- Abortion positions of strong partisans in 2004
+
+## Results: raw data {#sec-fap-results-raw .smaller}
+
+::: notes
+Read one row, jobs and standard of living: centre down 2, left up 3, right up 4. The only issue with any polarization.
+The rest shift left or right as a whole, or not at all.
+Brackets: coding don't knows as moderates changes the centre a lot. This is A&S's coding choice.
+:::
+
+![Percentage point change in each position of six NES issue scales between 1984 and 2004, from extremely liberal (left) to extremely conservative (right). Numbers in brackets treat "don't knows" as moderates. *Source:* @fiorina2008polarization, Table 1.](images/week03-fap2008-tab1.png){#fig-fap-table fig-align="center" width="60%"}
+
+- Only jobs and standard of living loses its centre to **both** extremes
+
+## Results: limited sorting {#sec-fap-results-sorting .smaller}
+
+::: notes
+The Pew line: 10 to 14 points over 20 years.
+Abortion: the textbook test for sorting, and still a third and two fifths out of step.
+Mobilization: an alternative explanation for 2004. This one is a factual disagreement.
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Average percentage point difference between Republican and Democratic identifiers on 40 questions, 1987 to 2007. It grows from 10 to 14 points. *Source:* @fiorina2008polarization, Figure 1, from Pew Research Center data.](images/week03-fap2008-fig1.png){#fig-fap-pew fig-align="center"}
+:::
+
+::: {.column width="50%"}
+- Party sorting "certainly has occurred", but far less than among elites
+- Abortion, 2004: a third of strong Democrats and two fifths of strong Republicans break with their party
+- Red vs blue states: majorities disagree on **one** NES issue
+- 2004 turnout: the parties' ground game, not polarization (party contacts up 8 points)
+:::
+
+::::
+
+## Conclusion {#sec-fap-conclusion .smaller}
+
+::: notes
+Their summary in one line: sorting yes, polarization no.
+Ask: after both papers, what do they actually agree on? Write it on the board. You need it for the pair task.
+:::
+
+- Without "multiple recodings and aggregations", the A&S case "disappears"
+- **Sorting yes, polarization no**
+- Red-blue divides are a "misleading exaggeration"
+- 2004 engagement rests on one election and ignores mobilization
+- "No reason to revise the conclusions of *Culture War?*"
+
+# What were they disagreeing about? {#sec-disagreement}
+
+::: notes
+55 to 80 min. Definition slide 3 min, pair task 10 min, plenary 12 min.
+:::
+
+## One side's definition {#sec-fa-definition .smaller}
+
+::: notes
+The top of each figure is the polarized case.
+Figure 2: both bimodal, but only the bottom has its modes at the extremes.
+Level vs trend: judging a level is contested, a move from top to bottom is a polarizing trend.
+Caveat out loud: this is Fiorina's own definition. It builds in his side of the debate.
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Two hypothetical distributions on a liberal-conservative scale. The top one is bimodal and counts as polarized, the bottom one is not. *Source:* @fiorina2008political, Figure 1.](images/week03-fa2008-fig1.png){#fig-fa-bimodal fig-align="center" height="300"}
+:::
+
+::: {.column width="50%"}
+![Two bimodal distributions on a seven-point scale. Only the bottom one has its modes at the extremes. *Source:* @fiorina2008political, Figure 2.](images/week03-fa2008-fig2.png){#fig-fa-levels fig-align="center" height="200"}
+:::
+
+::::
+
+- Polarization = bimodality with the modes **at the extremes**, and a trend away from the centre
+- Not neutral: this is **one side's** definition of the term under dispute
+
+## Pair task {#sec-pair-task .smaller}
+
+::: notes
+10 min in pairs. Put the four-panel figure back up if asked.
+Walk around. Push pairs that say "both are right" to say about what.
+:::
+
+For each claim, note what **evidence** each side uses and which **concept** from @fig-four-dists or the three axes it rests on.
+
+1. "The public is more polarized than in the 1980s."
+2. "Democrats and Republicans are further apart."
+3. "The public is polarized where it counts."
+4. "Voters are divided: look at the red and blue map."
+5. "The data show it."
+
+Then decide: is the disagreement about a **definition**, a **measurement** or a **fact**?
+
+## The mapping {#sec-mapping .smaller}
+
+::: notes
+Reveal only after the pairs report. Take row by row, pairs first, table second.
+:::
+
+::: {.small}
+| Claim | A&S look at | FAP look at | What is at stake |
+|---|---|---|---|
+| The public is polarized | Consistency across issues, 24 to 33% | Each item's raw distribution, the middle holds | Constraint vs bimodality |
+| The parties are further apart | Party ID and ideology, r .32 to .63 | The same fact, called sorting | Sorting vs polarization |
+| Polarized where it counts | The engaged third, SD 2.8 | The public as a whole | Which population |
+| Voters are divided | Votes, approval, red vs blue states | Not evidence, it reflects the candidates | Choices vs positions |
+| The data show it | Recoded items, don't knows as moderates, an index | Raw position-by-position change | Measurement |
+
+: Five disputed claims in the 2008 exchange, the evidence each side uses for them, and the concept or measurement choice the disagreement turns on. {#tbl-mapping}
+:::
+
+## Three kinds of dispute {#sec-three-kinds .smaller}
+
+::: notes
+Answer the session's goal 2 here.
+Stress: they agree on most facts. Elites diverged, party sorting happened, the self-placement distribution barely moved.
+What is left is mostly naming, some coding, a little fact.
+:::
+
+- **Mostly definitional:** both accept that party sorting happened. They disagree about whether to call it polarization.
+- **Partly measurement:** coding "don't knows" as moderates and aggregating items into an index change the answer
+- **A little substantive:** was 2004 turnout driven by polarization or by party mobilization? Does religion outweigh class?
+
+. . .
+
+::: {.callout-important}
+**"Is the public polarized?" has no answer until you say which polarization.**
+Two authors can read the same data and reach opposite verdicts, because they are measuring different concepts.
+:::
+
+## Questions for the group {#sec-questions .smaller}
+
+::: notes
+Plenary to 80 min. Pick two, not all four.
+The last question is the bridge to next week.
+:::
+
+- If both sides accept that sorting happened, what exactly is left to disagree about?
+- Is a public polarized if its engaged third is? Whose opinions should count?
+- If votes cannot show polarization, what evidence could?
+- Does any of this travel to a multiparty system like Germany's?
+
+# Wrap-up {#sec-wrap-up}
+
+::: notes
+80 to 90 min.
+:::
+
+## Recap: takeaways {#sec-recap .smaller}
+
+::: notes
+Ask the room for one takeaway before revealing the list.
+:::
+
+- **Polarization is a family of concepts:** dispersion, bimodality, sorting, distance, plus three axes
+- **Elites diverged** without dispute. The contested question is the mass public.
+- **A&S** find rising consistency and sorting, deepest among the engaged
+- **FAP** find a stable middle and call the rest sorting
+- Most of the dispute is about **which concept** and **which population**, some about coding, little about facts
+
+## Recap: learning goals {#sec-recap-goals .smaller}
+
+::: notes
+Go through the goals one by one. Ask for each answer before revealing it.
+:::
+
+**Goal 1. Elite vs mass, divergence vs alignment**
+
+- Elite polarization concerns office holders and activists, mass polarization the electorate
+- Divergence means moving towards the extremes. Alignment means positions bundling together, and with party.
+
+**Goal 2. Disagreeing without disagreeing about a fact**
+
+- A&S and FAP largely agree on the facts, but attach the word to different concepts and populations
+
+**Goal 3. Which concept a claim depends on**
+
+- Ask what distribution changed, in whom, and whether it is positions or choices
+
+## Next session {#sec-next-session}
+
+::: notes
+One minute. Sell the move: from what people think to how they feel.
+:::
+
+- **Session 04: What is affective polarization?**
+- From where people *stand* to how they *feel* about the other side
+- Core reading: @iyengar2015fear and @wagner2024affectiveeurope
+
+## References {#sec-references .smaller .scrollable}
+
+<!-- .scrollable is allowed here only because this is the reference slide (STYLE.md §5.1). -->
+
+::: {#refs}
+:::

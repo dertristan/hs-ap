@@ -68,7 +68,8 @@ execute:
 bibliography: references.bib
 biblio-style: apsr
 # The syllabus cites every reading, and the bibliography is collected under its
-# own References heading. Nothing else on the site cites anything.
+# own References heading. The decks cite the readings they frame, and each collects
+# them on a closing References slide.
 citations-hover: true
 
 # The fontawesome extension is VENDORED at website/_extensions/quarto-ext/fontawesome,

@@ -299,6 +299,11 @@ for (i in seq_len(cfg$sessions$count)) {
   }
   cat("::: {.session-meta}\n", meta, "\n:::\n\n", sep = "")
 
+  # A correction students must see first, written in course.yml.
+  if (!unset(w$notice)) {
+    cat("::: {.callout-note}\n", trimws(w$notice), "\n:::\n\n", sep = "")
+  }
+
   if (!is.null(w$content)) {
     cat(trimws(w$content), "\n\n", sep = "")
   }

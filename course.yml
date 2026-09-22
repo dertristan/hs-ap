@@ -95,6 +95,9 @@ blocks:
 #             for when only part of a text is set. The note prints after the
 #             citation in the syllabus, so what to read travels with the reading
 #             rather than sitting in the session prose.
+#   notice    optional. A callout body (bold lead line, then one to three lines)
+#             printed as a callout-note at the top of the session's syllabus entry,
+#             for corrections students need to see before the session.
 #
 # There is NO slides key. The schedule's Slides column is driven by whether
 # website/slides/weekNN.qmd exists, so a deck links itself as soon as it is
@@ -136,9 +139,14 @@ weeks:
       - "Distinguish elite from mass polarization, and ideological divergence from issue alignment."
       - "Explain why two authors can disagree about whether a public is polarized without disagreeing about any fact."
       - "Identify which concept of polarization a given empirical claim depends on."
+    notice: |
+      **The core reading for this session was listed incorrectly at first.**
+      The intended readings are the 2008 exchange in the Journal of Politics between @abramowitz2008ispolarization and @fiorina2008polarization.
+      The Annual Review article by @fiorina2008political, listed here before, is now optional.
+      If you have already read it, your time was not wasted: it sets out the distinctions this debate turns on, and we use it in the session.
     readings:
-      core: [abramowitz2008ispolarization, fiorina2008political]
-      optional: [lelkes2016mass, baldassarri2008partisans, mccoy2018toward, turkenburg2025ideology]
+      core: [abramowitz2008ispolarization, fiorina2008polarization]
+      optional: [fiorina2008political, lelkes2016mass, baldassarri2008partisans, mccoy2018toward, turkenburg2025ideology]
 
   - week: 4
     topic: "What is affective polarization?"
