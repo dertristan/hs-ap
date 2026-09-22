@@ -35,9 +35,8 @@ Do not reuse them outside this course without checking the publisher's terms.
 
 | File | Source | Rights holder |
 |---|---|---|
-| `week03-as2008-fig1.png`, `week03-as2008-fig3.png` | Abramowitz and Saunders (2008), "Is polarization a myth?", *The Journal of Politics* 70 (2), Figures 1 and 3 | Southern Political Science Association, published by Cambridge University Press |
+| `week03-as2008-tab1.png`, `week03-as2008-tab5.png`, `week03-as2008-fig1a.png`, `week03-as2008-fig1b.png`, `week03-as2008-fig3.png` | Abramowitz and Saunders (2008), "Is polarization a myth?", *The Journal of Politics* 70 (2), Tables 1 and 5, Figure 1 (panels A and B, cropped apart) and Figure 3 | Southern Political Science Association, published by Cambridge University Press |
 | `week03-fap2008-tab1.png`, `week03-fap2008-fig1.png` | Fiorina, Abrams and Pope (2008), "Polarization in the American public: Misconceptions and misreadings", *The Journal of Politics* 70 (2), Table 1 and Figure 1 | Southern Political Science Association, published by Cambridge University Press |
-| `week03-fa2008-fig1.png`, `week03-fa2008-fig2.png`, `week03-fa2008-fig7.png` | Fiorina and Abrams (2008), "Political polarization in the American public", *Annual Review of Political Science* 11, Figures 1, 2 and 7 | Annual Reviews |
 
 ### The instructor's own figures
 
