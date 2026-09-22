@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dertristan.github.io/hs-ap/syllabus.html</loc>
-    <lastmod>2026-09-10T15:33:44.727Z</lastmod>
+    <lastmod>2026-09-22T20:34:14.816Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dertristan.github.io/hs-ap/schedule.html</loc>
+    <lastmod>2026-09-07T07:57:50.570Z</lastmod>
   </url>
   <url>
     <loc>https://dertristan.github.io/hs-ap/index.html</loc>
     <lastmod>2026-09-09T14:23:58.926Z</lastmod>
   </url>
   <url>
-    <loc>https://dertristan.github.io/hs-ap/schedule.html</loc>
-    <lastmod>2026-09-07T07:57:50.570Z</lastmod>
+    <loc>https://dertristan.github.io/hs-ap/slides/week03.html</loc>
+    <lastmod>2026-09-22T20:40:43.058Z</lastmod>
   </url>
 </urlset>
