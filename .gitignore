@@ -32,3 +32,6 @@ notes.md
 fukuyama2018identity.pdf
 /.quarto/
 **/*.quarto_ipynb
+
+# Session prep notes: teaching plans, not site content.
+*-prep.md
