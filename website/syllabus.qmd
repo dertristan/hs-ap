@@ -183,7 +183,7 @@ improvised.
 ### Language {#sec-language}
 
 The seminar is taught in English and the readings are in English.
-The term paper may be written in English or in German.
+The term paper shall be written in English.
 
 ### Mental health support {#sec-mental-health}
 
@@ -197,6 +197,10 @@ The [help in times of crisis page](https://www.uni-mannheim.de/en/academics/stud
 gives an overview of the counselling and support services available at the university.
 
 ## AI policy {#sec-ai-policy}
+
+::: {.callout-note}
+This stated policy is a first proposal and may be subject to change during the term.
+:::
 
 You may use AI assistance, and for some things it is genuinely useful: finding literature,
 checking whether an argument holds together, working on your English.
@@ -242,20 +246,31 @@ This is a preliminary plan and may be revised during the term.
 # -----------------------------------------------------------------------------
 dates <- session_dates(cfg)
 
+# One bullet: the citation, plus the reading's note when course.yml gives it one.
+# The note is plain text after the citation rather than a pandoc locator
+# (`@key [chapters 1, 2 and 3]`), because a locator is relabelled by the citation
+# style and the page would then stop saying what course.yml says.
+bullets_of <- function(entries) {
+  cite <- vapply(entries, function(e) {
+    if (is.null(e$note)) sprintf("- @%s", e$key) else sprintf("- @%s, %s", e$key, e$note)
+  }, character(1))
+  paste0(cite, collapse = "\n")
+}
+
 emit_readings <- function(cfg, i) {
-  core <- readings_of(cfg, i, "core")
-  opt <- readings_of(cfg, i, "optional")
+  core <- reading_entries(cfg, i, "core")
+  opt <- reading_entries(cfg, i, "optional")
   if (length(core) == 0 && length(opt) == 0) {
     return(invisible(NULL))
   }
   cat("::: {.session-readings}\n\n")
   if (length(core) > 0) {
     cat("**Core reading**\n\n")
-    cat(paste0("- @", core, collapse = "\n"), "\n\n", sep = "")
+    cat(bullets_of(core), "\n\n", sep = "")
   }
   if (length(opt) > 0) {
     cat("**Optional**\n\n")
-    cat(paste0("- @", opt, collapse = "\n"), "\n\n", sep = "")
+    cat(bullets_of(opt), "\n\n", sep = "")
   }
   cat(":::\n\n")
 }
@@ -266,7 +281,16 @@ for (i in seq_len(cfg$sessions$count)) {
     next
   }
 
-  cat("### Session ", i, ": ", w$topic, " {#sec-session-", pad(i), "}\n\n", sep = "")
+  cat(
+    "### Session ",
+    i,
+    ": ",
+    w$topic,
+    " {#sec-session-",
+    pad(i),
+    "}\n\n",
+    sep = ""
+  )
 
   meta <- session_date_label(dates, i, "%d %B %Y")
   blk <- block_name_of(cfg, i)

@@ -90,7 +90,11 @@ blocks:
 #   topic     one line, becomes the session heading and the schedule row
 #   content   one or two sentences on what the session covers
 #   goals     learning goals, addressed to the student
-#   readings  BibTeX keys from website/references.bib, split core / optional
+#   readings  BibTeX keys from website/references.bib, split core / optional.
+#             An entry is either a bare key, or a `key:` with an optional `note:`
+#             for when only part of a text is set. The note prints after the
+#             citation in the syllabus, so what to read travels with the reading
+#             rather than sitting in the session prose.
 #
 # There is NO slides key. The schedule's Slides column is driven by whether
 # website/slides/weekNN.qmd exists, so a deck links itself as soon as it is
@@ -113,13 +117,14 @@ weeks:
     content: |
       Before we can ask what divides a democracy, we need a concept of the groups that do the dividing.
       This session treats identity as a demand for recognition and dignity, and asks how an attachment to a group becomes a political fact rather than a private one.
-      Read chapters 1 and 2 of Fukuyama.
     goals:
       - "Trace where the modern concept of identity comes from and how it entered political argument."
       - "Explain how a demand for recognition becomes a political demand."
       - "Distinguish an identity from a preference, and say why the distinction matters for the rest of the term."
     readings:
-      core: [fukuyama2018identity]
+      core:
+        - key: fukuyama2018identity
+          note: "chapters 1, 2 and 3"
       optional: [huddy2013group, huddy2001social, westphal2025politicaltheory]
 
   - week: 3

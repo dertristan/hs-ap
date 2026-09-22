@@ -110,16 +110,31 @@ week_entry <- function(cfg, i) {
   if (length(hit) == 0) NULL else hit[[1]]
 }
 
-# The session's readings, as a character vector of BibTeX keys. `which` is "core"
-# or "optional". Always a character vector, empty when there are none, so callers
-# never have to test for NULL.
-readings_of <- function(cfg, i, which = c("core", "optional")) {
+# The session's readings, normalised. `which` is "core" or "optional". A reading in
+# course.yml is either a bare BibTeX key or a mapping carrying `key` and an optional
+# `note` ("chapters 1, 2 and 3"), and both spellings may sit in the same list, so
+# this is where the two are flattened into one shape: a list of list(key, note),
+# with note NULL when there is none. Always a list, empty when there are no
+# readings, so callers never have to test for NULL.
+reading_entries <- function(cfg, i, which = c("core", "optional")) {
   which <- match.arg(which)
   w <- week_entry(cfg, i)
   if (is.null(w) || is.null(w$readings)) {
-    return(character())
+    return(list())
   }
-  as.character(unlist(w$readings[[which]]) %||% character())
+  raw <- w$readings[[which]] %||% list()
+  lapply(raw, function(r) {
+    if (is.list(r)) {
+      list(key = as.character(r$key), note = if (unset(r$note)) NULL else as.character(r$note))
+    } else {
+      list(key = as.character(r), note = NULL)
+    }
+  })
+}
+
+# Just the BibTeX keys, for callers that only count or link them.
+readings_of <- function(cfg, i, which = c("core", "optional")) {
+  vapply(reading_entries(cfg, i, which), function(e) e$key, character(1))
 }
 
 `%||%` <- function(x, y) if (is.null(x)) y else x

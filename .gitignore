@@ -30,3 +30,5 @@ Thumbs.db
 
 notes.md
 fukuyama2018identity.pdf
+/.quarto/
+**/*.quarto_ipynb
