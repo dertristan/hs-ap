@@ -45,7 +45,7 @@ The first is **conceptual discipline**: polarization means several different thi
 The second is **measurement**: an affective polarization score is a construction, and what it is built from shapes what it can support.
 The third is **evidence**: a striking finding is a starting point rather than a conclusion, and the seminar asks what design produced it and how much it can carry.
 
-The term paper is where you do this on a question of your own.
+The term paper is where you do this on a question of your own, with evidence you analyse yourself.
 
 ## Course logistics {#sec-logistics}
 
@@ -136,17 +136,28 @@ The point is to get criticism while there is still time to act on it.
 
 #### Term paper, graded {#sec-term-paper}
 
-- **Form:** a written term paper (*schriftliche Hausarbeit*).
+- **Form:** an empirical written term paper (*schriftliche Hausarbeit*), plus the code that
+  reproduces its analysis.
 - **Length:** at most **`r cfg$paper$max_words` words**, the limit set in the module catalogue.
 - **Deadline:** `r shown(cfg$paper$deadline)`.
 - **Topic:** your own, on something the seminar covers. You pitch it in session
   `r cfg$blocks[[4]]$from` or `r cfg$blocks[[4]]$from + 1`, and session `r n_sessions` is optional
   individual consultation.
 
-A workable paper takes a claim from the literature and does something specific to it: tests it
-against a case or a dataset it was not built on, takes apart a concept two authors are using
-differently, or works out what a measurement choice does to a published conclusion.
-A summary of what several authors have said is not a term paper.
+A workable paper takes a claim from the literature and confronts it with evidence you analyse
+yourself: it tests the claim against a case or a dataset it was not built on, re-analyses published
+data under a different measurement choice, or works out what two authors' rival definitions do to
+the same data.
+A summary of what several authors have said is not a term paper, and neither is an argument that
+never meets data.
+
+::: {.callout-important}
+**Every paper produces results, and somebody else has to be able to recompute them.**
+Hand in the script or the notebook that produced your numbers, tables and figures, together with
+the data or a link to where it comes from.
+Any technology is fine, R, Python, Stata or anything else, as long as the result comes out of a
+script that can be run again rather than out of clicks nobody can retrace.
+:::
 
 ### Registration and withdrawal {#sec-registration}
 
@@ -184,6 +195,32 @@ improvised.
 
 The seminar is taught in English and the readings are in English.
 The term paper shall be written in English.
+
+### Additional learning resources {#sec-practice-materials}
+
+Two external platforms are worth your time.
+Both are voluntary and neither is part of the requirements to pass.
+They are here because the term paper asks for reproducible code, and this seminar spends its
+sessions on the reading rather than on tooling.
+
+**[DataCamp](https://www.datacamp.com/groups/shared_links/bfecde68ebfcd9af2db396c17af1267ab74165318bfda32072373d1d1ded1a47).**
+Use the link to join the course group, which gives you **six months of premium access**.
+DataCamp offers in-depth, self-paced practical training in R, coding, data analytics and AI topics,
+so it is the right place to drill something until it is automatic, at whatever speed suits you.
+The introduction to R track is a good starting point.
+
+::: {.callout-warning}
+**Register with your `uni-mannheim.de` address.**
+Premium access is tied to the university account.
+If you sign up with a private address the group link will not grant it, and the fix is to start
+again with the right address.
+:::
+
+**[Duolingo Math](https://www.duolingo.com/math).**
+Freemium, and a good starting point if you would like to relaunch yourself into mathematics
+fundamentals or introductory statistics.
+No prior statistics is assumed in this seminar, so this is not a prerequisite.
+It is simply there if the maths behind a reading feels shakier than you would like.
 
 ### Mental health support {#sec-mental-health}
 

@@ -6,7 +6,10 @@ Guidance for Claude Code when working in this repository.
 
 The website for the seminar *Us and them: Identity and polarization in contemporary
 democracies* (Hauptseminar, B.A. Politikwissenschaft, University of Mannheim, 13 sessions).
-It is a **reading seminar, not a methods course**: no homework, no code, no models.
+It is a **reading seminar, not a methods course**: no homework, and no code or models in the
+sessions themselves.
+The one exception sits outside the sessions: the term paper is empirical and is handed in with the
+code that reproduces its analysis, in any technology, so long as it runs from a script.
 Sessions do have a slide deck each, which is a short framing of the reading rather than a lecture.
 
 ## Scope: three pages plus the decks
