@@ -152,14 +152,14 @@ weeks:
     topic: "What is affective polarization?"
     content: |
       Affective polarization (AP) is the tendency of people who identify with a party to view opposing partisans negatively and copartisans positively [@iyengar2015fear; @iyengar2019origins].
-      This session takes the concept apart: the social identity logic it rests on, what it claims to add to an ideological account of division, and what has to be respecified when it travels from the two-party United States to a European multiparty system.
+      This session takes the concept apart: the social identity logic it rests on, what it claims to add to an ideological account of division, and what evidence shows that partisan animus reaches beyond survey answers into implicit attitudes and behavior.
     goals:
       - "Derive in-group favouritism and out-group hostility from social identity theory."
       - "Explain what affective polarization claims to add to an ideological account of division."
-      - "Identify what breaks, and what has to be respecified, when the concept moves to a multiparty system."
+      - "Assess the evidence that partisan animus shows up in implicit attitudes and behavior, and not only in what people say in surveys."
     readings:
-      core: [iyengar2015fear, wagner2024affectiveeurope]
-      optional: [iyengar2012affect, iyengar2019origins, tajfel1986integrative, reiljan2020fear, iyengarwagner2025conceptualizing]
+      core: [iyengar2012affect, iyengar2015fear]
+      optional: [wagner2024affectiveeurope, iyengar2019origins, tajfel1986integrative, reiljan2020fear, iyengarwagner2025conceptualizing]
 
   - week: 5
     topic: "Measuring affective polarization"

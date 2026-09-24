@@ -530,7 +530,7 @@ Two authors can read the same data and reach opposite verdicts, because they are
 
 - **Session 04: What is affective polarization?**
 - From where people *stand* to how they *feel* about the other side
-- Core reading: @iyengar2015fear and @wagner2024affectiveeurope
+- Core reading: @iyengar2012affect and @iyengar2015fear
 
 ## Before you go {#sec-term-paper-note .smaller}
 
