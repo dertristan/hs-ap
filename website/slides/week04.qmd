@@ -1,0 +1,365 @@
+---
+title: "Session 04: What is affective polarization?"
+---
+
+<!--
+Session 04, 90 minutes. SKELETON: slide bodies are PLACEHOLDER, the ideas sit in the notes.
+Time plan, also repeated in the notes of each section divider:
+
+   0-5   Opening: goals, agenda
+   5-15  Why groups? The evolutionary reading
+  15-25  Categories in the head (Sapolsky, colour)
+  25-40  Social identity theory: favouritism and derogation
+  40-55  Iyengar, Sood and Lelkes (2012), five-part scheme
+  55-75  Iyengar and Westwood (2015), five-part scheme
+  75-85  Questions for the group
+  85-90  Wrap-up: recap, next session
+
+The learning goals are copied from course.yml (weeks, week 4). The deck runs no R, so they
+are kept in step by hand, like the title.
+-->
+
+## What comes to mind? {#sec-menti .smaller}
+
+::: notes
+- PLACEHOLDER: new Menti code
+- 2 min, before any framing
+- idea: "Who is *us*? Who is *them*?"
+:::
+
+**PLACEHOLDER: opening question**
+
+Go to **menti.com** and enter **PLACEHOLDER**
+
+## Session 04 goals {#sec-week04-goals}
+
+::: notes
+- read the goals aloud
+- goal 1 is the first half of the session, goals 2 and 3 the two papers
+:::
+
+By the end of today, you will be able to:
+
+1. Derive in-group favouritism and out-group hostility from social identity theory.
+2. Explain what affective polarization claims to add to an ideological account of division.
+3. Assess the evidence that partisan animus shows up in implicit attitudes and behavior, and not only in what people say in surveys.
+
+## Today {#sec-today .smaller}
+
+::: notes
+- 0 to 5 min: goals and agenda
+- bridge from last week: from where people *stand* to how they *feel*
+:::
+
+1. **Why groups?**
+   - An evolutionary reading
+2. **Categories in the head**
+   - Why we see borders where there are none
+3. **Social identity theory**
+   - Ingroup favouritism and outgroup derogation
+4. **Iyengar, Sood and Lelkes (2012)**
+   - "Affect, not ideology"
+5. **Iyengar and Westwood (2015)**
+   - "Fear and loathing across party lines"
+6. **Wrap-up**
+
+# Why groups? {#sec-why-groups}
+
+::: notes
+- 5 to 15 min
+- frame it: before parties, before politics, there are groups
+:::
+
+## Group membership {#sec-group-membership .smaller}
+
+::: notes
+- social identity foundations: we are group animals
+- belonging to a group was a matter of survival, not preference
+- ingroup vs outgroup: who shares food, who is a threat
+- TODO: one concrete example to open with
+:::
+
+- PLACEHOLDER: humans live in groups, and always have
+- PLACEHOLDER: ingroup and outgroup
+
+## A long evolutionary history {#sec-evolution .smaller}
+
+::: notes
+- evolutionary reading of social identity
+- *Homo sapiens* as a species is much older than "modern" humans
+- behaviourally modern humans: roughly the last 70k years
+- TODO: check figures before class (anatomically modern *H. sapiens* is usually dated around 300k years)
+- point: for almost all of that time, people lived in small bands
+- a brain tuned for small bands now lives in mass democracies
+- TODO: timeline figure?
+:::
+
+- PLACEHOLDER: timeline, species vs modern humans
+- PLACEHOLDER: small bands, most of our history
+
+# Categories in the head {#sec-categories}
+
+::: notes
+- 15 to 25 min
+:::
+
+## Borders that are not there {#sec-sapolsky .smaller}
+
+::: notes
+- Robert Sapolsky's point about categorical thinking
+- once we have a category, we **overestimate** differences between categories
+- and **underestimate** differences within them
+- TODO: Sapolsky source, not yet in references.bib (Stanford lecture series or *Behave*, check which one has the colour example)
+:::
+
+- PLACEHOLDER: between-category differences overestimated
+- PLACEHOLDER: within-category differences underestimated
+
+## The colour example {#sec-colour .smaller}
+
+::: notes
+- reality: light is a continuous spectrum of wavelengths
+- colours are categories, an invention of the human brain
+- two shades either side of the "border" between blue and green look more different than two equally far apart shades inside "blue"
+- ask: where exactly does blue end?
+- TODO: figure of a continuous spectrum with category borders drawn on it
+:::
+
+- PLACEHOLDER: the spectrum is continuous
+- PLACEHOLDER: the categories are ours
+
+## From categories to bias {#sec-categories-to-bias .smaller}
+
+::: notes
+- transfer to people: once "us" and "them" exist, the same distortion applies
+- them: all alike, very different from us
+- us: all individuals
+- leads into SIT: categorisation is its first step
+:::
+
+- PLACEHOLDER: the same distortion, applied to people
+
+# Social identity theory {#sec-sit}
+
+::: notes
+- 25 to 40 min
+- start from the evolutionary history just covered
+:::
+
+## Tajfel and Turner {#sec-tajfel-turner .smaller}
+
+::: notes
+- social identity: the part of the self-concept that comes from group membership [@tajfel1986integrative]
+- three steps: categorisation, identification, comparison
+- positive distinctiveness: we want our group to look good next to others
+:::
+
+- PLACEHOLDER: categorisation, identification, comparison
+- PLACEHOLDER: positive distinctiveness
+
+## Minimal groups {#sec-minimal-groups .smaller}
+
+::: notes
+- Klee vs Kandinsky, or dot estimation [@tajfel1970experiments; @tajfel1971social]
+- groups with no history, no interaction, no stakes
+- still: people allocate more to their own group, and maximise the gap
+- point: the category alone is enough
+:::
+
+- PLACEHOLDER: the minimal group paradigm
+- PLACEHOLDER: the category alone is enough
+
+## Favouritism and derogation {#sec-favouritism-derogation .smaller}
+
+::: notes
+- ingroup favouritism: liking and helping us
+- outgroup derogation: disliking and hurting them
+- not the same thing [@brewer1999psychology]: ingroup love does not require outgroup hate
+- ask: which of the two is more dangerous for democracy?
+:::
+
+- PLACEHOLDER: ingroup favouritism
+- PLACEHOLDER: outgroup derogation
+- PLACEHOLDER: ingroup love or outgroup hate?
+
+## Party as a social identity {#sec-party-identity .smaller}
+
+::: notes
+- bridge to the readings
+- if party is a group like any other, SIT predicts affect, not only disagreement
+- that is the claim of affective polarization [@iyengar2019origins]
+:::
+
+- PLACEHOLDER: partisans as a group
+- PLACEHOLDER: what SIT predicts for them
+
+# Iyengar, Sood and Lelkes (2012) {#sec-isl}
+
+::: notes
+- 40 to 55 min
+- five-part scheme, as last week
+:::
+
+## Introduction {#sec-isl-intro .smaller}
+
+::: notes
+- links to last week: the Fiorina vs Abramowitz debate is about ideology
+- their move: look at affect instead
+:::
+
+- PLACEHOLDER
+
+## Theory {#sec-isl-theory .smaller}
+
+::: notes
+- partisanship as social identity, SIT applied to parties
+- campaigns as the trigger that activates the identity
+:::
+
+- PLACEHOLDER
+
+## Research design {#sec-isl-design .smaller}
+
+::: notes
+- feeling thermometers over time (ANES)
+- traits ascribed to partisans
+- marriage question: would you be upset if your child married ...?
+- cross-national comparison
+- campaign exposure
+:::
+
+- PLACEHOLDER
+
+## Results {#sec-isl-results .smaller}
+
+::: notes
+- TODO: pick one or two figures from the paper
+:::
+
+- PLACEHOLDER
+
+## Conclusion {#sec-isl-conclusion .smaller}
+
+::: notes
+- affect, not ideology: dislike grows even where issue positions barely move
+:::
+
+- PLACEHOLDER
+
+# Iyengar and Westwood (2015) {#sec-iw}
+
+::: notes
+- 55 to 75 min
+- same five parts
+:::
+
+## Introduction {#sec-iw-intro .smaller}
+
+::: notes
+- survey answers could be cheap talk
+- question: does animus show up where people cannot or do not control it?
+:::
+
+- PLACEHOLDER
+
+## Theory {#sec-iw-theory .smaller}
+
+::: notes
+- partisan vs racial bias
+- norms suppress racial bias, no norm suppresses partisan bias
+:::
+
+- PLACEHOLDER
+
+## Research design {#sec-iw-design .smaller}
+
+::: notes
+- implicit association test, partisan and racial
+- scholarship selection task
+- trust game and dictator game
+:::
+
+- PLACEHOLDER
+
+## Results {#sec-iw-results .smaller}
+
+::: notes
+- TODO: pick one or two figures from the paper
+- key comparison: partisan bias vs racial bias
+:::
+
+- PLACEHOLDER
+
+## Conclusion {#sec-iw-conclusion .smaller}
+
+::: notes
+- ask: what does behaviour show that a thermometer cannot?
+:::
+
+- PLACEHOLDER
+
+# Discussion {#sec-discussion}
+
+::: notes
+- 75 to 85 min
+:::
+
+## Questions for the group {#sec-questions .smaller}
+
+::: notes
+- pick two, not all
+:::
+
+- PLACEHOLDER: what does affect add that ideology does not? (goal 2)
+- PLACEHOLDER: is behaviour better evidence than a survey answer? (goal 3)
+- PLACEHOLDER: is party the same kind of group as the minimal groups?
+
+# Wrap-up {#sec-wrap-up}
+
+::: notes
+- 85 to 90 min
+:::
+
+## Recap: takeaways {#sec-recap .smaller}
+
+::: notes
+- ask for one takeaway before revealing the list
+:::
+
+- PLACEHOLDER
+
+## Recap: learning goals {#sec-recap-goals .smaller}
+
+::: notes
+- goal by goal
+- ask for each answer before revealing it
+:::
+
+**Goal 1. Favouritism and hostility from social identity theory**
+
+- PLACEHOLDER
+
+**Goal 2. What affect adds to ideology**
+
+- PLACEHOLDER
+
+**Goal 3. Animus beyond survey answers**
+
+- PLACEHOLDER
+
+## Next session {#sec-next-session}
+
+::: notes
+- 1 min
+:::
+
+- **Session 05: Measuring affective polarization**
+- PLACEHOLDER: one line on the move
+- Core reading: @druckman2019we and @wagner2021affective
+
+## References {#sec-references .smaller .scrollable}
+
+<!-- .scrollable is allowed here only because this is the reference slide (STYLE.md §5.1). -->
+
+::: {#refs}
+:::
