@@ -10,8 +10,7 @@ Session 04, 90 minutes. Time plan, also repeated in the notes of each section di
   15-25  Categories in the head
   25-40  Social identity theory: favouritism and derogation
   40-55  Iyengar, Sood and Lelkes (2012), five-part scheme
-  55-75  Iyengar and Westwood (2015), five-part scheme
-  75-85  Questions for the group
+  55-85  Iyengar and Westwood (2015), five-part scheme
   85-90  Wrap-up: recap, next session
 
 The learning goals are copied from course.yml (weeks, week 4). The deck runs no R, so they
@@ -305,6 +304,7 @@ We seek **positive distinctiveness**: our group should look better
 - partisanship is an affective attachment, acquired early and stable
 - worry: losers who despise the winners may not accept their decisions as legitimate
 - ask: is this a US story? the UK comparison says partly
+- ask: if partisans barely disagree more but dislike each other more, what is the "polarization" in affective polarization?
 :::
 
 - **Affect, not ideology**: Americans dislike the other side more, without disagreeing much more
@@ -314,8 +314,9 @@ We seek **positive distinctiveness**: our group should look better
 # Iyengar and Westwood (2015) {#sec-iw}
 
 ::: notes
-- 55 to 75 min
+- 55 to 85 min
 - same five parts
+- the discussion block is gone: ask the questions in the notes as they come up
 :::
 
 ## Introduction {#sec-iw-intro .smaller}
@@ -348,51 +349,207 @@ We seek **positive distinctiveness**: our group should look better
 
 ::: notes
 - all online SSI samples, 2012 and 2013
-- Study 1: brief implicit association test, party and race, N about 2,000
+- Study 1: brief implicit association test (BIAT), party and race, N about 2,000
 - Study 2: pick one of two high-school seniors for a scholarship, cue is Young Democrats / Young Republicans or a racially typical name, GPA varied, N about 1,000
 - Study 3: trust and dictator games, player 2's party and race crossed, N about 800
-- Study 4: add a no-party control and an independent, to separate favour from hostility
+- Study 4: add a no-party control and an independent, to separate favour from hostility, N about 1,250
+- **figure shows:** one BIAT screen (top) and the eight party images (bottom)
+  - the respondent sorts images and words as fast as possible
+  - here one key means "Democrats or Good", the other key everything else
+  - four rounds of 20: two pair Democrats with good, two pair Republicans with good
+- **figure means:** people answer faster for pairs they already link in memory
+  - a Democrat who likes Democrats is quick when "Democrat" and "good" share a key
+  - D-score = speed difference between the two pairings, divided by its SD, range -2 to 2
+  - positive = faster with Republicans + good, negative = faster with Democrats + good
+  - the race BIAT is identical, with Black and white faces or names
 :::
 
+:::: {.columns}
+
+::: {.column width="58%"}
 1. **Implicit**: reaction-time test of party and race associations
 2. **Scholarship**: choose between two students, one cue for party or race, grades varied
 3. **Games**: split \$10 with a copartisan or opponent, same or other race
 4. **Games with a control**: separate favour for *us* from hostility to *them*
+:::
 
-## Results: implicit bias {#sec-iw-results-implicit .smaller}
+::: {.column width="42%"}
+![The partisan brief implicit association test. Respondents sort party images and good or bad words with two keys, as fast as they can. *Source:* @iyengar2015fear, Figure 1.](images/week04-iw2015-fig1.png){#fig-iw-biat height="420"}
+:::
+
+::::
+
+## Results: does the test work? {#sec-iw-results-validity .smaller}
 
 ::: notes
-- D-score: positive = faster pro-Republican associations
-- gap between parties: d = .95, between races: d = .61
-- implicit correlates with thermometers, r = .42
-- thermometer gap even larger, d = 1.72: saying it out loud *adds* polarization
+- **figure shows:** mean partisan D-score (dot) with 95% confidence interval (bar)
+  - top: by party identity, strong Republican to strong Democrat
+  - bottom: by ideology, very conservative to very liberal
+  - right of zero = implicit preference for Republicans, left = for Democrats
+- **figure means:** the implicit test lines up with what people report
+  - strong Republicans .35, weak Republicans in between, independents near zero
+  - weak Democrats -.26, strong Democrats -.21: a small kink at the Democratic end
+  - very conservative .23, conservative .17, liberal -.28, very liberal -.27
+  - this is the validity check: the test measures party affect, not noise
+  - D-score and thermometer gap correlate at r = .42
+:::
+
+![Mean partisan D-score with 95% confidence intervals, by strength of party identity (top) and by ideology (bottom). The implicit preference follows self-reported party and ideology. *Source:* @iyengar2015fear, Figure 2.](images/week04-iw2015-fig2.png){#fig-iw-validity fig-align="left" height="400"}
+
+- The implicit measure sorts people the way their self-reports do
+
+## Results: saying vs reacting {#sec-iw-results-explicit .smaller}
+
+::: notes
+- **figure shows:** distributions of affective polarization among Democrats (dark) and Republicans (light)
+  - top: explicit, net feeling thermometer, from -100 to 100
+  - bottom: implicit, partisan D-score, from -2 to 2
+  - the smaller the overlap of the two curves, the more polarized
+- **figure means:** both measures separate the parties clearly
+  - effect size (Cohen's d): 1.72 explicit, .95 implicit
+  - so partisans look **more** polarized when they state their feelings than when they react automatically
+  - the opposite of race, where people hide bias in surveys
+  - the two measures share only 17.5% of their variance
+- ask: why would people exaggerate partisan dislike when asked?
+:::
+
+![Distributions of explicit (top, net feeling thermometer) and implicit (bottom, partisan D-score) partisan affect for Democrats and Republicans. The two parties overlap little on both, and least on the explicit measure. *Source:* @iyengar2015fear, Figure 3.](images/week04-iw2015-fig3.png){#fig-iw-explicit fig-align="left" height="395"}
+
+- Explicit answers are **more** polarized than automatic reactions
+
+## Results: party vs race {#sec-iw-results-implicit .smaller}
+
+::: notes
+- **figure shows:** mean D-score with 95% CI
+  - top: partisan BIAT by party, bottom: race BIAT by race
+  - same metric for both tests, so the gaps can be compared directly
+- **figure means:** party divides more deeply than race, even implicitly
+  - Republicans .27, Democrats -.23, independents -.02
+  - whites .16, African Americans -.09
+  - effect size: party d = .95, race d = .61
+  - partisan and racial D-scores correlate only .13: party is not a proxy for race
+  - race is acquired at birth and deeply ingrained, so this is a high bar
 :::
 
 ![Implicit association scores for party (top) and race (bottom), means with 95% confidence intervals. Democrats and Republicans lie further apart than African and European Americans. *Source:* @iyengar2015fear, Figure 4.](images/week04-iw2015-fig4.png){#fig-iw-dscores fig-align="left" height="370"}
 
 - The party gap is **larger** than the race gap, even implicitly
 
-## Results: behaviour {#sec-iw-results-behaviour .smaller}
+## Results: leaners {#sec-iw-results-leaners .smaller}
 
 ::: notes
-- scholarship: about 80% of partisans pick their own side, leaners too
-- GPA made no significant difference: co-partisan chosen even when less qualified
-- race: only African Americans favour their own, whites slightly favour the Black student
-- games: copartisans get more, race makes no difference
+- **figure shows:** mean net feeling thermometer (Republicans minus Democrats) with 95% CI
+  - five groups: Democrats, leaners, pure independents, leaners, Republicans
+- **figure means:** leaners feel like partisans
+  - Democrats -48.8, lean Democrats -30.6
+  - independents +3.5, close to neutral
+  - lean Republicans +28.2, Republicans +42.6
+  - leaners are less polarized than partisans, but far from independents
+  - "closet partisans": saying "independent" is a label, not an absence of affect
+- ask: who counts as a partisan? back to the definition
+:::
+
+![Mean net feeling thermometer, Republicans minus Democrats, with 95% confidence intervals, by party identity including leaners and pure independents. Leaners sit close to the partisans, pure independents near zero. *Source:* @iyengar2015fear, Figure 5.](images/week04-iw2015-fig5.png){#fig-iw-leaners fig-align="left" width="100%"}
+
+- Leaners behave like partisans, only pure independents are neutral
+
+## Results: scholarship {#sec-iw-results-behaviour .smaller}
+
+::: notes
+- **table shows:** share of participants picking each scholarship winner, N in parentheses
+  - top: partisan task, rows are the participant's party
+  - bottom: racial task, rows are the participant's race
+  - pooled over all four GPA conditions
+- **table means:** party drives the choice, race barely does
+  - Democrats pick the Democrat 79.2%, Republicans the Republican 80.0%
+  - leaners too: 80.4% and 69.2%
+  - independents slightly pro-Democrat, 57.9%
+  - race: only African Americans favour their own, 73.1%
+  - whites pick the Black student 55.8% of the time
+  - the party cue was one line among five activities on a CV
 :::
 
 ![Winner of the scholarship by the participant's party (top) and race (bottom). About 80% of partisans pick the candidate of their own party, while race produces far weaker ingroup choice. *Source:* @iyengar2015fear, Table 3.](images/week04-iw2015-tab3.png){#fig-iw-scholarship fig-align="left" height="330"}
 
-- Party trumps merit, race barely registers
+- Four in five partisans pick their own side
+
+## Results: merit {#sec-iw-results-merit .smaller}
+
+::: notes
+- **figures show:** predicted probability, from a logit model, with 95% CI
+  - top: probability of picking the Republican, by participant's party
+  - bottom: probability of picking the African American, by participant's race
+  - three panels each: equally qualified, one or the other has the better GPA (4.0 vs 3.5)
+- **figures mean (party):** grades do not matter
+  - a Democrat picks the Republican .21 when equal, .30 when the Republican is better, .14 when the Democrat is better
+  - Republicans pick the Democrat at most about .2 in every panel
+  - no interaction between party and qualification is significant
+  - independents roughly split, slight lean to the Democrat
+- **figures mean (race):** grades do matter
+  - whites pick the white student .42 when equal, .29 when he is worse, .64 when he is better
+  - African Americans pick the Black student about .78 when equal, and pick the white student .45 when he is better
+- ask: what would it take for merit to beat party?
+:::
+
+![Predicted probability of picking the Republican, by participant's party (top), and of picking the African American, by participant's race (bottom), for equally qualified candidates and for each candidate being more qualified. Partisan choices barely respond to grades, racial choices do. *Source:* @iyengar2015fear, Figures 6 and 7.](images/week04-iw2015-fig6.png){#fig-iw-merit-party fig-align="left" width="92%"}
+
+![](images/week04-iw2015-fig7.png){fig-align="left" width="92%"}
+
+- Party trumps merit, race does not
+
+## Results: games {#sec-iw-results-games-race .smaller}
+
+::: notes
+- **games:** player 1 gets \$10 and may give any part to player 2
+  - dictator game: player 2 just keeps it, so giving less is pure dislike
+  - trust game: the gift is tripled and player 2 may send some back, so giving is also a bet on trustworthiness
+- **figure shows:** mean amount given (dot) with 95% CI
+  - player 2 is a copartisan or an opposing partisan (rows)
+  - of the same or a different race (panels)
+  - dictator game on top, trust game below
+- **figure means:** party moves money, race does not
+  - overall means: \$2.88 dictator, \$4.17 trust
+  - copartisans get about 24% more in the dictator game, about 10% more in the trust game
+  - same race: +8 cents in dictator, -7 cents in trust, neither significant
+  - no interaction: a copartisan of the same race gets no extra
+:::
+
+![Mean amount of \$10 given to player 2 in dictator (top) and trust (bottom) games, by player 2's party and race, with 95% confidence intervals. Copartisans receive more than opponents in both games, while race makes no difference. *Source:* @iyengar2015fear, Figure 8.](images/week04-iw2015-fig8.png){#fig-iw-games-race fig-align="left" height="400"}
+
+- With real money at stake, party matters and race does not
+
+## Results: by party {#sec-iw-results-tab4 .smaller}
+
+::: notes
+- **table shows:** mean allocation to player 2 and its standard error, and the share giving nothing
+  - rows: participant's party x player 2's party
+  - dictator game on top, trust game below
+- **table means:** both sides discriminate, by about the same amount
+  - dictator: Democrats give Democrats \$3.82, Republicans \$3.14
+  - Republicans give Republicans \$3.36, Democrats \$2.68
+  - the copartisan premium is \$0.68 for both parties
+  - trust: premium \$0.63 for Democrats, \$0.24 for Republicans
+  - Republicans give less overall
+  - one in three Republicans gives a Democrat nothing in the dictator game
+:::
+
+![Mean amount given to player 2, with standard errors and the share giving nothing, by the participant's and player 2's party, in the dictator and trust games. Both parties give more to their own side. *Source:* @iyengar2015fear, Table 4.](images/week04-iw2015-tab4.png){#fig-iw-by-party fig-align="left" height="360"}
+
+- The bias is symmetric: each side gives its own about 68 cents more in the dictator game
 
 ## Results: love or hate? {#sec-iw-results-games .smaller}
 
 ::: notes
-- control: no party information
-- dictator: copartisan +\$0.67, opponent -\$0.63
-- trust: copartisan +\$0.30, opponent -\$0.63, penalty about twice the bonus
-- independents treated like the control
-- contrast with Balliet et al.: here it is out-group hostility
+- **figure shows:** mean amount given to player 2 with 95% CI, Study 4
+  - player 2 is an opposing partisan, an independent, a copartisan, or undescribed (control)
+  - the control is the baseline: no party information at all
+- **figure means:** hostility is at least as strong as favouritism
+  - dictator: copartisan +\$0.67, opponent -\$0.63 against the control
+  - trust: copartisan +\$0.30, opponent -\$0.63
+  - in the trust game the penalty is about twice the bonus
+  - independents are treated like the control
+  - contrast with Balliet et al.: in most groups discrimination is ingroup love, for party it is outgroup hate
+- ask: is a party the same kind of group as a minimal group? why hostility here, where most groups produce favouritism?
 :::
 
 ![Amount of \$10 given to player 2 in dictator and trust games, by player 2's party, means with 95% confidence intervals. Opponents receive less than the no-information control, copartisans more. *Source:* @iyengar2015fear, Figure 9.](images/week04-iw2015-fig9.png){#fig-iw-games fig-align="left" height="350"}
@@ -402,7 +559,7 @@ We seek **positive distinctiveness**: our group should look better
 ## Conclusion {#sec-iw-conclusion .smaller}
 
 ::: notes
-- ask: what does behaviour show that a thermometer cannot?
+- ask: is a scholarship choice or a money split better evidence than a thermometer rating? what can each miss?
 - partisans, unlike racists, face no sanction
 - party is chosen, so people are blamed for it
 - elites who cooperate look like appeasers, so taunting pays
@@ -413,24 +570,6 @@ We seek **positive distinctiveness**: our group should look better
 - It is **permitted**: no norm restrains it
 - Hostility toward *them* outweighs favour for *us*
 - Elites have an incentive to fight rather than cooperate
-
-# Discussion {#sec-discussion}
-
-::: notes
-- 75 to 85 min
-:::
-
-## Questions {#sec-questions .smaller}
-
-::: notes
-- pick two, not all
-- Q1 is goal 2, Q2 goal 3, Q3 goal 1
-- Q3 hook: Balliet et al. find mostly ingroup love, Iyengar and Westwood find outgroup hate
-:::
-
-1. If partisans barely disagree more but dislike each other more, what is the "polarization" in affective polarization?
-2. Is a scholarship choice or a money split better evidence than a thermometer rating? What can each miss?
-3. Is a party the same kind of group as a minimal group? Why might party produce hostility where most groups produce favouritism?
 
 # Wrap-up {#sec-wrap-up}
 
