@@ -39,6 +39,7 @@ Do not reuse them outside this course without checking the publisher's terms.
 | `week03-fap2008-tab1.png`, `week03-fap2008-fig1.png` | Fiorina, Abrams and Pope (2008), "Polarization in the American public: Misconceptions and misreadings", *The Journal of Politics* 70 (2), Table 1 and Figure 1 | Southern Political Science Association, published by Cambridge University Press |
 | `week04-isl2012-fig1.png`, `week04-isl2012-fig4.png` | Iyengar, Sood and Lelkes (2012), "Affect, not ideology: A social identity perspective on polarization", *Public Opinion Quarterly* 76 (3), Figures 1 and 4 | American Association for Public Opinion Research, published by Oxford University Press |
 | `week04-iw2015-fig1.png` to `week04-iw2015-fig9.png`, `week04-iw2015-tab3.png`, `week04-iw2015-tab4.png` | Iyengar and Westwood (2015), "Fear and loathing across party lines: New evidence on group polarization", *American Journal of Political Science* 59 (3), Figures 1 to 9 and Tables 3 and 4 | Midwest Political Science Association, published by Wiley |
+| `week05-w2021-fig1.png` | Wagner (2021), "Affective polarization in multiparty systems", *Electoral Studies* 69, Figure 1 | Elsevier |
 
 ### Public-domain figures
 
@@ -50,4 +51,11 @@ The author released it into the public domain worldwide, so it may be used for a
 
 `week03-physics.png`, `week03-four-dists.png` and `week03-bipolar-multipolar.png` are schematic
 figures drawn by the instructor for an earlier talk and rendered from the same code.
+They fall under the site's CC BY-SA 4.0 licence.
+
+`week05-thermo-us.png`, `week05-ratings.png`, `week05-api.png`, `week05-distance.png`,
+`week05-spread.png`, `week05-ap-grid-empty.png` and `week05-ap-grid.png` are schematic figures
+drawn by the instructor, adapted from the same earlier talk.
+`week05-eu25-composition.png` charts the instructor's own survey data (eu25games) from an ongoing
+research project.
 They fall under the site's CC BY-SA 4.0 licence.
