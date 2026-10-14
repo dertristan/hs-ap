@@ -84,7 +84,7 @@ By the end of today, you will be able to:
 - The original meaning is alignment, orientation, separation
 - Nothing about conflict or hostility. Social science supplied that.
 
-![Two physical meanings of polarization. Light passing a filter ends up aligned in one plane, and a magnet separates charge towards two poles. Neither involves conflict.](images/week03-physics.png){#fig-physics fig-align="center" width="80%"}
+![Two physical meanings of polarization. Light passing a filter ends up aligned in one plane, and a magnet separates charge towards two poles. Neither involves conflict.](images/week03-physics.png){#fig-physics fig-align="center" height="330"}
 
 ## A family of concepts {#sec-family .smaller}
 
@@ -101,7 +101,7 @@ By the end of today, you will be able to:
 - At least four mathematically distinct things share the name
 - They can move in **opposite directions in the same data**
 
-![Four meanings of polarization, grey before and navy after. Dispersion is how spread out opinions are, bimodality is whether the middle empties, sorting is whether two divides become correlated, and distance is how far apart group means are.](images/week03-four-dists.png){#fig-four-dists fig-align="center" width="70%"}
+![Four meanings of polarization, grey before and navy after. Dispersion is how spread out opinions are, bimodality is whether the middle empties, sorting is whether two divides become correlated, and distance is how far apart group means are.](images/week03-four-dists.png){#fig-four-dists fig-align="center" height="330"}
 
 ## Three further axes {#sec-axes .smaller}
 

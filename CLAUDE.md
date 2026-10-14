@@ -52,3 +52,9 @@ gated on the file existing, so a deck publishes itself and there is no `slides:`
 cd website
 quarto render
 ```
+
+After editing a deck, check that every slide fits the rendered output (the QMIR workflow, ported):
+
+```powershell
+.\automation\check-decks.ps1 -Week 06
+```

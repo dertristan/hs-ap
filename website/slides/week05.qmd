@@ -72,7 +72,7 @@ By the end of today, you will be able to:
 
 "Please rate each party on a scale from 0 to 100. Ratings above 50 mean you feel warm toward it, below 50 cold."
 
-![One fictional Democrat rates the Democratic Party at 85 and the Republican Party at 20 on the 0 to 100 feeling thermometer. Their affective polarization is the gap between the two ratings, 65 points.](images/week05-thermo-us.png){#fig-thermo-us fig-align="center" width="85%"}
+![One fictional Democrat rates the Democratic Party at 85 and the Republican Party at 20 on the 0 to 100 feeling thermometer. Their affective polarization is the gap between the two ratings, 65 points.](images/week05-thermo-us.png){#fig-thermo-us fig-align="center" height="200"}
 
 $$
 AP_i = T_{i,\text{in}} - T_{i,\text{out}} = 85 - 20 = 65
@@ -191,7 +191,7 @@ Each measure answers these questions differently.
 - The respondent feels close to Party A
 - Vote shares follow @wagner2021affective, Table 1
 
-## Reiljan: the affective polarization index {#sec-api .smaller}
+## Reiljan: the AP index {#sec-api .smaller}
 
 ::: notes
 - @eq-api-party: the AP of party n's partisans: own party minus each out-party, weighted by out-party size
@@ -319,8 +319,12 @@ $$
 $$ {#eq-spread}
 
 $$
-\text{Spread}^{w}_i = \sqrt{\sum_{p} v_p (\text{like}_{ip} - \overline{\text{like}}_i)^2}, \quad \overline{\text{like}}_i = \sum_{p} v_p \, \text{like}_{ip}
+\text{Spread}^{w}_i = \sqrt{\sum_{p} v_p (\text{like}_{ip} - \overline{\text{like}}_i)^2}
 $$ {#eq-spread-w}
+
+$$
+\overline{\text{like}}_i = \sum_{p} v_p \, \text{like}_{ip}
+$$ {#eq-spread-w-mean}
 :::
 
 - **No in-group** at all
@@ -362,7 +366,7 @@ Unweighted: how polarized is this person's view of all parties?
 Weighted: how polarized is this person's view of the parties that matter for the system?
 :::
 
-## Same ratings, different numbers {#sec-measures-summary .smaller}
+## Same ratings, three scores {#sec-measures-summary .smaller}
 
 ::: notes
 - read the table row by row
@@ -386,7 +390,7 @@ Weighted: how polarized is this person's view of the parties that matter for the
 Always state which measure, weighted or not, and who was included.
 :::
 
-## Does the choice matter in practice? {#sec-wagner-fig1 .smaller}
+## Does the choice matter? {#sec-wagner-fig1 .smaller}
 
 ::: notes
 - **figure shows:** country means of AP in CSES, 51 countries, four measures
@@ -503,7 +507,7 @@ In a comparison across countries or over time, report the sample composition nex
 - Thermometers can also target partisans, for example "Democratic Party voters" [@druckman2019we]
 - Whom do respondents picture: the neighbour, or the party leader? [@druckman2019we]
 
-## Druckman and Levendusky: design {#sec-dl-design .smaller}
+## D&L (2019): design {#sec-dl-design .smaller}
 
 ::: notes
 - online sample, US, December 2017, N about 2,200, preregistered
@@ -522,7 +526,7 @@ In a comparison across countries or over time, report the sample composition nex
 
 US online survey, 2017, partisans and leaners, N about 2,200
 
-## Druckman and Levendusky: results {#sec-dl-results .smaller}
+## D&L (2019): results {#sec-dl-results .smaller}
 
 ::: notes
 - table 2: out-party thermometer
@@ -584,7 +588,7 @@ A claim about citizens disliking each other needs a measure that targets citizen
 - 3 to 4 min in pairs, then collect
 :::
 
-![Two dimensions of measuring affective polarization: the target, parties and elites (vertical) or ordinary partisans (horizontal), and the mode, what people say (attitudinal) or what people do (behavioral). The cells are left open for the discussion.](images/week05-ap-grid-empty.png){#fig-grid-empty fig-align="center" width="80%"}
+![Two dimensions of measuring affective polarization: the target, parties and elites (vertical) or ordinary partisans (horizontal), and the mode, what people say (attitudinal) or what people do (behavioral). The cells are left open for the discussion.](images/week05-ap-grid-empty.png){#fig-grid-empty fig-align="center" height="340"}
 
 Place today's measures and last week's in the grid.
 
@@ -598,7 +602,7 @@ Place today's measures and last week's in the grid.
 - today was the left column, mostly the top left cell
 :::
 
-![The same grid with typical measures in each cell. Today's thermometer measures sit in the vertical attitudinal cell, where nearly all comparative work lies. Next session moves to the horizontal behavioral cell.](images/week05-ap-grid.png){#fig-grid fig-align="center" width="80%"}
+![The same grid with typical measures in each cell. Today's thermometer measures sit in the vertical attitudinal cell, where nearly all comparative work lies. Next session moves to the horizontal behavioral cell.](images/week05-ap-grid.png){#fig-grid fig-align="center" height="340"}
 
 Today: the **left column**. Next week: the **bottom right**.
 
@@ -687,7 +691,7 @@ The magic five:
 - The whole paper is **one large argument**
 - Every section, and every paragraph, is a **smaller argument** that serves it
 
-## Each section is an argument (1) {#sec-sections-1 .smaller}
+## Sections as arguments (1) {#sec-sections-1 .smaller}
 
 ::: notes
 - intro: puzzle, or importance, or both, then a sneak preview of every other section
@@ -705,7 +709,7 @@ Ideally: why your hypotheses follow logically from the state of research.
 **Research design**: why your data, measurement and analysis are well suited to the question and the hypotheses.
 Be open about what the data can and cannot do. Do not overclaim.
 
-## Each section is an argument (2) {#sec-sections-2 .smaller}
+## Sections as arguments (2) {#sec-sections-2 .smaller}
 
 ::: notes
 - analysis: the pattern is evidence for or against, and the argument is why

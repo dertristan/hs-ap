@@ -473,27 +473,34 @@ We seek **positive distinctiveness**: our group should look better
 
 - Four in five partisans pick their own side
 
-## Results: merit {#sec-iw-results-merit .smaller}
+## Results: merit and party {#sec-iw-results-merit .smaller}
 
 ::: notes
-- **figures show:** predicted probability, from a logit model, with 95% CI
-  - top: probability of picking the Republican, by participant's party
-  - bottom: probability of picking the African American, by participant's race
-  - three panels each: equally qualified, one or the other has the better GPA (4.0 vs 3.5)
-- **figures mean (party):** grades do not matter
+- **figure shows:** predicted probability of picking the Republican, from a logit model, with 95% CI, by participant's party
+  - three panels: equally qualified, one or the other has the better GPA (4.0 vs 3.5)
+- **figure means:** grades do not matter
   - a Democrat picks the Republican .21 when equal, .30 when the Republican is better, .14 when the Democrat is better
   - Republicans pick the Democrat at most about .2 in every panel
   - no interaction between party and qualification is significant
   - independents roughly split, slight lean to the Democrat
-- **figures mean (race):** grades do matter
-  - whites pick the white student .42 when equal, .29 when he is worse, .64 when he is better
-  - African Americans pick the Black student about .78 when equal, and pick the white student .45 when he is better
 - ask: what would it take for merit to beat party?
 :::
 
-![Predicted probability of picking the Republican, by participant's party (top), and of picking the African American, by participant's race (bottom), for equally qualified candidates and for each candidate being more qualified. Partisan choices barely respond to grades, racial choices do. *Source:* @iyengar2015fear, Figures 6 and 7.](images/week04-iw2015-fig6.png){#fig-iw-merit-party fig-align="left" width="92%"}
+![Predicted probability of picking the Republican, by participant's party, for equally qualified candidates and for each candidate being more qualified. Partisan choices barely respond to grades. *Source:* @iyengar2015fear, Figure 6.](images/week04-iw2015-fig6.png){#fig-iw-merit-party fig-align="left" width="92%"}
 
-![](images/week04-iw2015-fig7.png){fig-align="left" width="92%"}
+- Grades barely move partisan choices
+
+## Results: merit and race {#sec-iw-results-merit-race .smaller}
+
+::: notes
+- **figure shows:** predicted probability of picking the African American, same model and panels, by participant's race
+- **figure means:** grades do matter
+  - whites pick the white student .42 when equal, .29 when he is worse, .64 when he is better
+  - African Americans pick the Black student about .78 when equal, and pick the white student .45 when he is better
+- compare with the previous slide: party trumps merit, race does not
+:::
+
+![Predicted probability of picking the African American, by participant's race, for equally qualified candidates and for each candidate being more qualified. Racial choices respond to grades. *Source:* @iyengar2015fear, Figure 7.](images/week04-iw2015-fig7.png){#fig-iw-merit-race fig-align="left" width="92%"}
 
 - Party trumps merit, race does not
 

@@ -75,8 +75,9 @@ $link-accent: #DE7E50; // the only non-blue in the deck
   color: $main-text;
 }
 
+/* 3em, not QMIR's 4em: at 4em long titles ran under the logo (automation/check-decks.ps1). */
 .reveal .slide-logo {
-  max-height: 4em !important;
+  max-height: 3em !important;
   top: 0;
   right: 12px;
 }

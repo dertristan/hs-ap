@@ -5,7 +5,8 @@ Carried over from the QMIR course (`C:/R/teaching/qmir-2026-fall/STYLE.md`), cut
 that apply to a site with three prose pages, a deck per session, and no homework and no models.
 
 The `E0NN` codes are kept so the two repos speak the same language.
-There is **no checker script here**, so they are conventions rather than enforced rules.
+There is **no static checker script here**, so they are conventions rather than enforced rules.
+Slide fit is the exception: it is measured on the rendered decks by `automation/check-decks.ps1` (§5).
 
 ---
 
@@ -189,8 +190,18 @@ inline `style="font-size: ..."`:
 `.reveal .small` and `.reveal .xsmall` are defined in `website/slides/theme.scss`. The site
 stylesheet does not carry them, because only the decks use them.
 
+**Fit is measured, not eyeballed.** Run `.\automation\check-decks.ps1` (or `-Week NN`) from the
+repo root after editing a deck. It renders the deck and reports slides that are too tall, too
+wide, or drawn under the Mannheim logo, with every fragment revealed. Under about 8 percent of
+overflow, take the next ladder step. Above that, split the slide. `automation/README.md` has the
+fix for each finding.
+
 **Revealed beats.** `. . .` separates them, and a beat is three to six short lines. Instructor
 cues go in a `::: notes` block as terse imperatives, never as prose.
+
+**A lone figure takes `height=`, not `width=`.** Quarto stretches a figure that is alone on a
+slide into the free space, which pushes the text below it into the footer, and an explicit
+height switches that off.
 
 **Images.** `website/slides/images/` holds the two University of Mannheim assets that
 `_metadata.yml` references, and `images/COPYRIGHTS.md` states their terms. Anything added there
