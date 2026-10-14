@@ -40,6 +40,8 @@ Do not reuse them outside this course without checking the publisher's terms.
 | `week04-isl2012-fig1.png`, `week04-isl2012-fig4.png` | Iyengar, Sood and Lelkes (2012), "Affect, not ideology: A social identity perspective on polarization", *Public Opinion Quarterly* 76 (3), Figures 1 and 4 | American Association for Public Opinion Research, published by Oxford University Press |
 | `week04-iw2015-fig1.png` to `week04-iw2015-fig9.png`, `week04-iw2015-tab3.png`, `week04-iw2015-tab4.png` | Iyengar and Westwood (2015), "Fear and loathing across party lines: New evidence on group polarization", *American Journal of Political Science* 59 (3), Figures 1 to 9 and Tables 3 and 4 | Midwest Political Science Association, published by Wiley |
 | `week05-w2021-fig1.png` | Wagner (2021), "Affective polarization in multiparty systems", *Electoral Studies* 69, Figure 1 | Elsevier |
+| `week06-s2023-fig1.png`, `week06-s2023-fig2.png` | Stoetzer et al. (2023), "Affective partisan polarization and moral dilemmas during the COVID-19 pandemic", *Political Science Research and Methods* 11 (2), Figures 1 and 2. Open access under CC BY-NC-SA 4.0 | The authors, published by Cambridge University Press for the European Political Science Association |
+| `week06-h2024-fig1.png`, `week06-h2024-fig2.png`, `week06-h2024-fig4.png`, `week06-h2024-fig6.png` | Hahm, Hilpert and König (2024), "Divided we unite: The nature of partyism and the role of coalition partnership in Europe", *American Political Science Review* 118 (1), Figures 1, 2, 4 and 6. Open access under CC BY 4.0 | The authors, published by Cambridge University Press for the American Political Science Association |
 
 ### Public-domain figures
 
@@ -58,4 +60,6 @@ They fall under the site's CC BY-SA 4.0 licence.
 drawn by the instructor, adapted from the same earlier talk.
 `week05-eu25-composition.png` charts the instructor's own survey data (eu25games) from an ongoing
 research project.
+`week06-ap-grid-readings.png` is a schematic drawn by the instructor, and `week06-schedule.png` is a
+screenshot of this site's own Schedule page.
 They fall under the site's CC BY-SA 4.0 licence.

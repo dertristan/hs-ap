@@ -184,6 +184,8 @@ weeks:
     goals:
       - "Describe how a conjoint allocation game turns a choice into a measure of partisan animosity."
       - "Compare behavioral and attitudinal measures on what each can and cannot support."
+      - "Explain, with potential outcomes, why only one outcome per person is observed and why random assignment still recovers the average causal effect."
+      - "Distinguish internal from external validity, and assess both for a given design."
       - "Explain why coalition partnership changes the pattern of animosity in European party systems."
     readings:
       core: [hahm2024divided, stoetzer2023affective]
