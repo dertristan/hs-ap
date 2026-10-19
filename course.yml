@@ -231,7 +231,7 @@ weeks:
       - "Name the consequences that have actually been studied, and the designs used to study them."
       - "Distinguish findings that hold up from findings that depend on context or on measurement."
     readings:
-      core: [harteveld2026alleged, broockman2023doesaffective]
+      core: [harteveld2026alleged, janssen2024breaking]
       optional: [voelkel2023interventions, versteegen2026cool, kekkonenharteveld2025democraticnorms, somer2025backsliding]
 
   - week: 10
