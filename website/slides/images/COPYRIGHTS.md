@@ -42,6 +42,8 @@ Do not reuse them outside this course without checking the publisher's terms.
 | `week05-w2021-fig1.png` | Wagner (2021), "Affective polarization in multiparty systems", *Electoral Studies* 69, Figure 1 | Elsevier |
 | `week06-s2023-fig1.png`, `week06-s2023-fig2.png` | Stoetzer et al. (2023), "Affective partisan polarization and moral dilemmas during the COVID-19 pandemic", *Political Science Research and Methods* 11 (2), Figures 1 and 2. Open access under CC BY-NC-SA 4.0 | The authors, published by Cambridge University Press for the European Political Science Association |
 | `week06-h2024-fig1.png`, `week06-h2024-fig2.png`, `week06-h2024-fig4.png`, `week06-h2024-fig6.png` | Hahm, Hilpert and König (2024), "Divided we unite: The nature of partyism and the role of coalition partnership in Europe", *American Political Science Review* 118 (1), Figures 1, 2, 4 and 6. Open access under CC BY 4.0 | The authors, published by Cambridge University Press for the American Political Science Association |
+| `week07-hlt2020-fig2.png`, `week07-hlt2020-fig3.png` | Hobolt, Leeper and Tilley (2021), "Divided by the vote: Affective polarization in the wake of the Brexit referendum", *British Journal of Political Science* 51 (4), Figures 2 and 3 | The authors, published by Cambridge University Press |
+| `week07-h2021-fig1.png`, `week07-h2021-fig3.png` | Harteveld (2021), "Ticking all the boxes? A comparative study of social sorting and affective polarization", *Electoral Studies* 72, Figures 1 and 3. Open access under CC BY 4.0 | The author, published by Elsevier |
 
 ### Public-domain figures
 
@@ -62,4 +64,6 @@ drawn by the instructor, adapted from the same earlier talk.
 research project.
 `week06-ap-grid-readings.png` is a schematic drawn by the instructor, and `week06-schedule.png` is a
 screenshot of this site's own Schedule page.
+`week07-sorted-crosscutting.png` is a schematic drawn by the instructor, and
+`week07-roccas-structures.png` is the instructor's own drawing after Figure 1 of Roccas and Brewer (2002).
 They fall under the site's CC BY-SA 4.0 licence.
