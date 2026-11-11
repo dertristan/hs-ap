@@ -122,7 +122,9 @@ skips <- skipped_sessions(cfg)
 emit_table <- function(weeks, caption, id) {
   rows <- vapply(weeks, row_of, character(1))
   # Any cancelled date that falls inside this block's span goes in at its place.
-  for (k in seq_len(nrow(skips))) {
+  # Latest first: two cancelled dates after the same session are both appended at
+  # one position, so inserting in reverse leaves them in date order.
+  for (k in rev(seq_len(nrow(skips)))) {
     aw <- skips$after_week[k]
     if (aw %in% weeks) {
       at <- which(weeks == aw)

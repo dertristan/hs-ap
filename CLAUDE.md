@@ -5,7 +5,7 @@ Guidance for Claude Code when working in this repository.
 ## What this is
 
 The website for the seminar *Us and them: Identity and polarization in contemporary
-democracies* (Hauptseminar, B.A. Politikwissenschaft, University of Mannheim, 13 sessions).
+democracies* (Hauptseminar, B.A. Politikwissenschaft, University of Mannheim, 12 sessions).
 It is a **reading seminar, not a methods course**: no homework, and no code or models in the
 sessions themselves.
 The one exception sits outside the sessions: the term paper is empirical and is handed in with the

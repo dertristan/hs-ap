@@ -46,7 +46,7 @@ course:
   ects: 6
 
 sessions:
-  count: 13
+  count: 12
   weekday: Wednesday
   # First session. The term runs weekly from here, and session N is the Nth weekly
   # date AFTER removing everything in skip_dates. That arithmetic lives in exactly
@@ -57,6 +57,7 @@ sessions:
   # mysterious.
   skip_dates:
     - 2026-10-28 # instructor at a congress
+    - 2026-11-04 # cancelled, instructor ill
   time: "15:30-17:00"
   room: A5, 6 -- C 112
   office_hours: "By appointment. Please email me to arrange a meeting (in person or online). I aim to reply within 24 hours."
@@ -79,10 +80,10 @@ blocks:
     to: 6
   - name: "Extensions and consequences"
     from: 7
-    to: 10
+    to: 9
   - name: "Term papers"
-    from: 11
-    to: 13
+    from: 10
+    to: 12
 
 # Per-session plan. Rendered by website/syllabus.qmd (topic, content, goals,
 # readings) and website/schedule.qmd (topic).
@@ -206,7 +207,11 @@ weeks:
       optional: [hahm2023divided, bradley2022ethnic, balcells2023secessionist, bettarelli2023regional, roccas2002social, mason2016acrosscutting, zollinger2024cleavage, masonversteegen2025socialsorting, hobolttilley2025issues]
 
   - week: 8
-    topic: "Is partisanship a social identity, or a cue about ideology?"
+    topic: "Is partisanship a social identity, or a cue about ideology? (with the rest of session 7)"
+    notice: |
+      **The session on 4 November was cancelled.**
+      We first finish session 7 on social sorting, then move on to this session's topic.
+      The readings for this session stay as listed, and the open session has been dropped so that the rest of the term keeps its dates.
     content: |
       American work is split on what partisan animosity is actually about.
       One side reads it as group identity, dislike of them because they are them (party over policy).
@@ -236,19 +241,6 @@ weeks:
       optional: [voelkel2023interventions, versteegen2026cool, kekkonenharteveld2025democraticnorms, somer2025backsliding]
 
   - week: 10
-    topic: "Open session"
-    content: |
-      This slot is deliberately unallocated.
-      We settle the topic and the reading in the session before, so it can follow whatever the group most wants to pursue, whether that is a theme from earlier in the term or something none of the readings covered.
-      Bring suggestions.
-    goals:
-      - "Propose a topic or a reading, and say what the seminar gains from it."
-      - "Read a text without a prepared framing, and take part in a discussion the group has shaped itself."
-    readings:
-      core: []
-      optional: []
-
-  - week: 11
     topic: "Term paper pitches I"
     content: |
       Short pitches of your term paper plan, followed by discussion.
@@ -261,7 +253,7 @@ weeks:
       core: []
       optional: []
 
-  - week: 12
+  - week: 11
     topic: "Term paper pitches II"
     content: |
       The second half of the pitches, in the same format.
@@ -273,7 +265,7 @@ weeks:
       core: []
       optional: []
 
-  - week: 13
+  - week: 12
     topic: "Term paper consultation (optional)"
     content: |
       Optional individual consultation on the term paper.
