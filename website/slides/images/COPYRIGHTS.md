@@ -44,6 +44,8 @@ Do not reuse them outside this course without checking the publisher's terms.
 | `week06-h2024-fig1.png`, `week06-h2024-fig2.png`, `week06-h2024-fig4.png`, `week06-h2024-fig6.png` | Hahm, Hilpert and König (2024), "Divided we unite: The nature of partyism and the role of coalition partnership in Europe", *American Political Science Review* 118 (1), Figures 1, 2, 4 and 6. Open access under CC BY 4.0 | The authors, published by Cambridge University Press for the American Political Science Association |
 | `week07-hlt2020-fig2.png`, `week07-hlt2020-fig3.png` | Hobolt, Leeper and Tilley (2021), "Divided by the vote: Affective polarization in the wake of the Brexit referendum", *British Journal of Political Science* 51 (4), Figures 2 and 3 | The authors, published by Cambridge University Press |
 | `week07-h2021-fig1.png`, `week07-h2021-fig3.png` | Harteveld (2021), "Ticking all the boxes? A comparative study of social sorting and affective polarization", *Electoral Studies* 72, Figures 1 and 3. Open access under CC BY 4.0 | The author, published by Elsevier |
+| `week08-dl2022-fig1.png`, `week08-dl2022-fig4a.png`, `week08-dl2022-fig4c.png`, `week08-dl2022-fig6.png` | Dias and Lelkes (2022), "The nature of affective polarization: Disentangling policy disagreement from partisan identity", *American Journal of Political Science* 66 (3), Figures 1, 4 (Panels A and C) and 6 | Midwest Political Science Association, published by Wiley |
+| `week08-off2023-fig1.png` | Orr, Fowler and Huber (2023), "Is affective polarization driven by identity, loyalty, or substance?", *American Journal of Political Science* 67 (4), Figure 1. Open access under CC BY-NC-ND 4.0, cropped from the page but not altered | The authors, published by Wiley for the Midwest Political Science Association |
 
 ### Public-domain figures
 
@@ -66,4 +68,5 @@ research project.
 screenshot of this site's own Schedule page.
 `week07-sorted-crosscutting.png` is a schematic drawn by the instructor, and
 `week07-roccas-structures.png` is the instructor's own drawing after Figure 1 of Roccas and Brewer (2002).
+`week08-two-stories.png` is a schematic drawn by the instructor.
 They fall under the site's CC BY-SA 4.0 licence.
