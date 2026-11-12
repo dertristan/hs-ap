@@ -165,6 +165,6 @@ belongs to the group.
 The optional readings are there for anyone who wants to go further, and as a starting point for
 term papers.
 
-Sessions `r cfg$blocks[[4]]$from` and `r cfg$blocks[[4]]$from + 1` are term paper pitches, and
-session `r cfg$sessions$count` is optional individual consultation.
+Sessions `r cfg$blocks[[4]]$from` and `r cfg$blocks[[4]]$from + 1` are term paper pitches.
+Individual consultation on the paper is by appointment.
 See [what is required of you](syllabus.qmd#sec-requirements) for what each of those asks.

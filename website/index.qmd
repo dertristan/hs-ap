@@ -77,7 +77,8 @@ cfg <- read_course()
 cat(trimws(cfg$course$description), "\n\n")
 ```
 
-The last three sessions belong to your term paper: two of short pitches to the group, and one of optional individual consultation.
+The last two sessions belong to your term paper, with short pitches to the group.
+Individual consultation on the paper is by appointment.
 
 ## Where to go next {#sec-where-next}
 

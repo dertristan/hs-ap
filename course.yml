@@ -80,9 +80,9 @@ blocks:
     to: 6
   - name: "Extensions and consequences"
     from: 7
-    to: 9
+    to: 10
   - name: "Term papers"
-    from: 10
+    from: 11
     to: 12
 
 # Per-session plan. Rendered by website/syllabus.qmd (topic, content, goals,
@@ -226,7 +226,28 @@ weeks:
       optional: [orr2020policy, dafoe2018information, huddy2015expressive, klar2018affective, bankert2025partisanship]
 
   - week: 9
+    topic: "Joint visit: inaugural lecture on building political communities"
+    notice: |
+      **This week we do not meet in our usual room.**
+      We attend the inaugural lecture at the Chair of Political Science, Evidence-based Political Research, together, at our usual time in room C217 (A5, 6).
+      The session on the consequences of affective polarization moves to 25 November, with its readings unchanged.
+    content: |
+      The lecture *Out of Many, One? Building Political Communities from the American Civil War to Contemporary Europe* asks how separate groups come to form one political community.
+      It presents three studies on the United States (the Civil War, military service during the Vietnam War, and childhood contact with ethnic outgroups) and closes with the emerging divide in European societies between cosmopolitans and communitarians.
+      Keep the two questions below in mind while you listen, and we come back to them briefly on 25 November.
+    goals:
+      - "Weigh what speaks for, and what against, seeing the divide between cosmopolitans and communitarians as one that produces affective polarization, with warmth towards one's own side and dislike of the other."
+      - "Thinking back to the session on social sorting, argue for and against treating this divide as the main cleavage, the one along which other lines of conflict (party, region, education, religion) line up."
+    readings:
+      core: []
+      optional: []
+
+  - week: 10
     topic: "Consequences of affective polarization for democracy"
+    notice: |
+      **This session moved from 18 November to 25 November.**
+      On 18 November we attend the inaugural lecture together instead.
+      The readings stay as listed, and we open with a short discussion of the lecture.
     content: |
       AP is usually introduced as a danger, to democratic norms, to accountability, to the willingness to live alongside people who vote differently.
       Recent work is more careful.
@@ -240,8 +261,12 @@ weeks:
       core: [harteveld2026alleged, janssen2024breaking]
       optional: [voelkel2023interventions, versteegen2026cool, kekkonenharteveld2025democraticnorms, somer2025backsliding]
 
-  - week: 10
+  - week: 11
     topic: "Term paper pitches I"
+    notice: |
+      **The pitches moved back by one week.**
+      If you were scheduled to present on 25 November, you now present on 2 December.
+      If you were scheduled to present on 2 December, you now present on 9 December.
     content: |
       Short pitches of your term paper plan, followed by discussion.
       Half the group presents and the other half asks the questions.
@@ -253,26 +278,18 @@ weeks:
       core: []
       optional: []
 
-  - week: 11
+  - week: 12
     topic: "Term paper pitches II"
+    notice: |
+      **The optional consultation session on 9 December is replaced by the second round of pitches.**
+      If you were scheduled to present on 2 December, you now present here.
+      Individual consultation on your term paper is by appointment, so email me to arrange a meeting.
     content: |
       The second half of the pitches, in the same format.
     goals:
       - "Present a research question, why it is worth answering, and a design that could answer it, in a few minutes."
       - "Name the data or the texts your paper will work from."
       - "Give another student criticism they can still act on."
-    readings:
-      core: []
-      optional: []
-
-  - week: 12
-    topic: "Term paper consultation (optional)"
-    content: |
-      Optional individual consultation on the term paper.
-      There is no group session in this slot.
-      Email me to book a time.
-    goals:
-      - "Leave with a question, an outline and a plan you can execute before the deadline."
     readings:
       core: []
       optional: []

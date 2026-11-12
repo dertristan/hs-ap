@@ -141,8 +141,8 @@ The point is to get criticism while there is still time to act on it.
 - **Length:** at most **`r cfg$paper$max_words` words**, the limit set in the module catalogue.
 - **Deadline:** `r shown(cfg$paper$deadline)`.
 - **Topic:** your own, on something the seminar covers. You pitch it in session
-  `r cfg$blocks[[4]]$from` or `r cfg$blocks[[4]]$from + 1`, and session `r n_sessions` is optional
-  individual consultation.
+  `r cfg$blocks[[4]]$from` or `r cfg$blocks[[4]]$from + 1`.
+  Individual consultation on the paper is by appointment.
 
 A workable paper takes a claim from the literature and confronts it with evidence you analyse
 yourself: it tests the claim against a case or a dataset it was not built on, re-analyses published
